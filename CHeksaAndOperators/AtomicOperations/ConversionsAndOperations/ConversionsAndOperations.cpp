@@ -13,6 +13,7 @@ using namespace std;
 void hexaRepresentation();
 void octaRepresentation();
 void sevenRepresentation();
+void multiRepresentation(vector<int>* value, int base);
 void Representation17();
 int wordSize(int inBase);
 vector<int>* quotientProductMethod(vector<int>* aVal,int inBase);
@@ -24,16 +25,51 @@ int main()
 	int i = 1;
 	int j = 1;
 
+	vector<int> *values;
+
 
 	float val1 = 2.0;
+	cout << " ************************** HEXA ********************* " << endl;
 	hexaRepresentation();
 	cout << endl;cout << endl;
+
+	cout << " ************************** HEXA_FROM_MULTI ********************* " << endl;
+	values = new vector<int>();
+	values->push_back(10);
+	values->push_back(15);
+
+	multiRepresentation(values,16);
+	cout << endl;cout << endl;
+
+	cout << " ************************** OCTA ********************* " << endl;
 	octaRepresentation();
 	cout << endl;cout << endl;
-	sevenRepresentation();
+
+	cout << " ************************** OCTA_FROM_MULTI ********************* " << endl;
+	values = new vector<int>();
+	values->push_back(2);
+	values->push_back(5);
+	values->push_back(7);
+
+	multiRepresentation(values, 8);
 	cout << endl;cout << endl;
-	Representation17();
+
+	cout << " ************************** SEVEN ********************* " << endl;
+	//sevenRepresentation();
+
+	cout << " ************************** SEVEN_FROM_MULTI ********************* " << endl;
+	values = new vector<int>();
+	values->push_back(3);
+	values->push_back(2);
+	values->push_back(5);
+	values->push_back(0);
+
+	multiRepresentation(values, 7);
 	cout << endl;cout << endl;
+
+	cout << endl;cout << endl;
+	//Representation17();
+	//cout << endl;cout << endl;
 
 	//cout << log2(4.0+1) << endl;
 	//cout << log2(4+1) << endl;
@@ -126,6 +162,38 @@ void octaRepresentation()
 
 	cout << "QuotientProduct To Hex " << endl;
 	vector<int>* hexVal = quotientProductMethodReverse(binVal, hexBase);
+
+	for (vector<int>::iterator it = hexVal->begin();it != hexVal->end();++it)
+		cout << *it << ' ';
+
+}
+
+void multiRepresentation(vector<int>* first, int base)
+{
+	int i = 0;
+
+	cout << "QuotientProduct To Bin " << endl;
+	for (vector<int>::iterator it = first->begin();it != first->end();++it)
+		cout << *it << ' ';
+
+	cout << '\n';
+
+	vector<int>* binVal = quotientProductMethod(first, base);
+
+	for (vector<int>::iterator it = binVal->begin();it != binVal->end();++it)
+	{
+		cout << *it;
+
+		if (i++ / (wordSize(base) - 1) == 1)
+		{
+			cout << ' ';
+			i = 0;
+		}
+
+	}
+
+	cout << "QuotientProduct To Hex " << endl;
+	vector<int>* hexVal = quotientProductMethodReverse(binVal, base);
 
 	for (vector<int>::iterator it = hexVal->begin();it != hexVal->end();++it)
 		cout << *it << ' ';
