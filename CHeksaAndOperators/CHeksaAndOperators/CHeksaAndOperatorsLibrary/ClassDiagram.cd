@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CCleanUp" Collapsed="true">
+    <Position X="17.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CleanUp.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CFunctionalClass" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FunctionalClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CModulator" Collapsed="true">
+    <Position X="9" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modulator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CInit" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Init.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPerform" Collapsed="true">
+    <Position X="13.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Perform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTemplateMethodBool">
+    <Position X="17.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAQAAAAAAAAAAAAIAAIBAAIAAAAI=</HashCode>
+      <FileName>TMB.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDeleteParser" Collapsed="true">
+    <Position X="9" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DeleteParser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CAlphabet" Collapsed="true">
+    <Position X="1.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAgIAEAAAAABAABEAQAAAAAIBAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Alphabet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CHeksa" Collapsed="true">
+    <Position X="5.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAQAAAAAAAAAACA=</HashCode>
+      <FileName>Heksa.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CHexaInToTetradesNBCAdapter" Collapsed="true">
+    <Position X="5" Y="8" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAASAAAAgAAAAACAAAAAAAAAAAQA=</HashCode>
+      <FileName>HexaInToTetradesNBCAdapter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CNBC" Collapsed="true">
+    <Position X="2.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NBC.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPositionalValue" Collapsed="true">
+    <Position X="2.25" Y="6.25" Width="1.5" />
+    <InheritanceLine Type="CAlphabet" FixedFromPoint="true">
+      <Path>
+        <Point X="3" Y="5.062" />
+        <Point X="3" Y="6.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PositionalValue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTetradeNBC" Collapsed="true">
+    <Position X="2.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TetradeNBC.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
