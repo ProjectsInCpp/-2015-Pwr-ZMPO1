@@ -5,7 +5,7 @@ using namespace std;
 
 class CAlphabet
 {
-	char* val = 0;
+	vector<char> val;
 	int length;
 
 	int filterSign(char *aInTable);

@@ -5,8 +5,7 @@ CAlphabet::CAlphabet(vector<char> *acceptedValues, char aLength, char *aVal)
 {
 	this->acceptedValues = new vector<char>();
 	this->acceptedValues = acceptedValues;
-	this->length = NUtils::ToEqualsInt(aLength) + END_SIGN_SIZE;
-	this->val = new char[this->length];
+	this->length = NUtils::ToEqualsInt(aLength);
 	this->sign = 0;
 	this->val = filterWrongCharsWithVector(this->length, aVal);
 	aVal = NULL;

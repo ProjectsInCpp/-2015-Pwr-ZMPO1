@@ -1,12 +1,17 @@
-﻿Build started 12/12/2015 11:49:02 AM.
-     1>Project "D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsConsole\CHeksaAndOperatorsConsole.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsConsole.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\Debug" CHeksaAndOperatorsLibrary.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsConsole.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsConsole.lib" /MACHINE:X86 Debug\CHeksaAndOperatorsConsole.obj
+﻿Build started 12/12/2015 12:06:45 PM.
+     1>Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsConsole\CHeksaAndOperatorsConsole.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsLibrary" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Debug\CHeksaAndOperatorsConsole.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsLibrary" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\CHeksaAndOperatorsConsole.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt CHeksaAndOperatorsConsole.cpp
+         CHeksaAndOperatorsConsole.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsConsole.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\Debug" CHeksaAndOperatorsLibrary.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsConsole.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsConsole.lib" /MACHINE:X86 Debug\CHeksaAndOperatorsConsole.obj
          Debug\stdafx.obj
-         "D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsLibrary.lib"
-         CHeksaAndOperatorsConsole.vcxproj -> D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsConsole.exe
-     1>Done Building Project "D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsConsole\CHeksaAndOperatorsConsole.vcxproj" (Build target(s)).
+         "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsLibrary.lib"
+         CHeksaAndOperatorsConsole.vcxproj -> D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsConsole.exe
+     1>Done Building Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsConsole\CHeksaAndOperatorsConsole.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.20
+Time Elapsed 00:00:01.02
