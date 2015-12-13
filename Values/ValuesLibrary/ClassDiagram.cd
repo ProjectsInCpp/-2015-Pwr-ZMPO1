@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="CAlphabet" Collapsed="true">
-    <Position X="3.25" Y="0.75" Width="1.5" />
+    <Position X="3" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>gAAAgAAQAAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Alphabet.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="IValue" Collapsed="true">
     <Position X="6" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>gAAAAAAAAAAAABAAAAhAAAAAAAAAAAAAAAgIAAAAAMA=</HashCode>
+      <HashCode>gAAAAAAAAAAAAhAAAAhAAAAAAAAAAAAAAAgIAAAAAMA=</HashCode>
       <FileName>IValue.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CDecimal" Collapsed="true">
     <Position X="9" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Decimal.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CBinary" Collapsed="true">
     <Position X="6" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Binary.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -56,12 +56,15 @@
       <FileName>U2.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CPositional" Collapsed="true">
-    <Position X="6" Y="3" Width="1.5" />
+  <Class Name="CPositional">
+    <Position X="6" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAEAAAAAIAA=</HashCode>
+      <HashCode>AAAAAAAAAQAAAAAAAgAAAAAAAAAAAAAAAAEAAAAAIAA=</HashCode>
       <FileName>Positional.h</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_alfa" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

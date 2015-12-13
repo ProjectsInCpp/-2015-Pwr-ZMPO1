@@ -160,6 +160,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CBinary_Test.cpp" />
+    <ClCompile Include="CDecimal_Test.cpp" />
     <ClCompile Include="CPositional_Tests.cpp" />
     <ClCompile Include="NUtils_Tests.cpp" />
     <ClCompile Include="stdafx.cpp">

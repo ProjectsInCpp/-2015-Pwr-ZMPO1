@@ -1,16 +1,13 @@
 #pragma once
-#include "PositionalValue.h"
+#include "Positional.h"
 class CDecimal :
-	public CPositionalValue
+	public CPositional
 {
 public:
-
-	CDecimal()
+	CDecimal(const string& val, char sign)
+		: CPositional('A', val, sign)
 	{
 	}
 
-	~CDecimal()
-	{
-	}
 };
 
