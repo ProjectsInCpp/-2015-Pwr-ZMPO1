@@ -1,16 +1,9 @@
 #pragma once
-#include "PositionalValue.h"
+#include "Positional.h"
 class CBinary :
-	public CPositionalValue
+	public CPositional
 {
 public:
 
-	CBinary()
-	{
-	}
-
-	~CBinary()
-	{
-	}
 };
 

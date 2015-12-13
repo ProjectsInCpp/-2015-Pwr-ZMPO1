@@ -3,7 +3,7 @@
   <Class Name="CAlphabet" Collapsed="true">
     <Position X="3.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>gAAAgAAAAAAAABAAAABAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>gAAAgAAQAAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Alphabet.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -13,16 +13,6 @@
       <HashCode>gAAAAAAAAAAAABAAAAhAAAAAAAAAAAAAAAgIAAAAAMA=</HashCode>
       <FileName>IValue.h</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="CPositionalValue">
-    <Position X="6" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAEAAAAAAAAAAgAAAAAAAA=</HashCode>
-      <FileName>PositionalValue.h</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_alphabet" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="CDecimal" Collapsed="true">
     <Position X="9" Y="4.75" Width="1.5" />
@@ -64,6 +54,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>U2.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPositional" Collapsed="true">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAEAAAAAIAA=</HashCode>
+      <FileName>Positional.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

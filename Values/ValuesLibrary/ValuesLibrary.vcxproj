@@ -137,7 +137,7 @@
     <ClInclude Include="Decimal.h" />
     <ClInclude Include="IValue.h" />
     <ClInclude Include="NUtils.h" />
-    <ClInclude Include="PositionalValue.h" />
+    <ClInclude Include="Positional.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="U1.h" />

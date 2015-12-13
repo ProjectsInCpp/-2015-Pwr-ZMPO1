@@ -30,9 +30,6 @@
     <ClInclude Include="Alphabet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PositionalValue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Decimal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -52,6 +49,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="NUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Positional.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

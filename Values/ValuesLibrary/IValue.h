@@ -8,14 +8,14 @@ class IValue
 {
 protected:
 	vector<int>* _val=nullptr;
-	int _base;
+	char _base;
 	int _sign;
 
 public:
 	IValue(char base, string val = "" , char sign = '0'){
 		_val = NUtils::ToIntVec(&val);
 		_sign = NUtils::ToEqualsSign(sign);
-		_base = NUtils::ToEqualsInt(base);
+		_base = base;
 	}
 
 	virtual ~IValue()
@@ -23,8 +23,26 @@ public:
 		delete _val;
 	}
 
-	virtual vector<int>* GetVal() = 0;
-	virtual int GetBase() = 0;
-	virtual int GetSign() = 0;
+	virtual vector<int>* GetVal()
+	{
+		vector<int> *retVal = new vector<int>();
+		retVal = this->_val;
+
+		return retVal;
+	}
+	virtual char GetBase()
+	{
+		return _base;
+	}
+
+	virtual int GetIntBase()
+	{
+		return NUtils::ToEqualsInt(this->_base);
+	}
+
+	virtual int GetSign()
+	{
+		return _sign;
+	}
 };
 

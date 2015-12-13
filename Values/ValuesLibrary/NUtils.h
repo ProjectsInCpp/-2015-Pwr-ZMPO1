@@ -13,11 +13,14 @@ namespace NUtils
 		if(upper>= 65 && upper <= 90)
 		{
 			end = upper - 65 + 10;
-		}else
-		if(upper>=48 && upper <= 57)
-		{
-			end = upper - 48;
 		}
+		else
+			if (upper >= 48 && upper <= 57)
+			{
+				end = upper - 48;
+			}
+			else
+				end = -1;
 
 		return end;
 	}
@@ -35,6 +38,7 @@ namespace NUtils
 	inline vector<int>* ToIntVec(string *aChain)
 	{
 		vector<int>* retVal = new vector<int>();
+		retVal->resize(aChain->size());
 
 		std::transform(aChain->begin(), aChain->end(), retVal->begin(), NUtils::ToEqualsInt);
 		
@@ -44,6 +48,7 @@ namespace NUtils
 	inline bool AreVOIEquals(vector<int>* first, vector<int>* second)
 	{
 		bool reachedBool = true;
+
 		for (size_t i = 0; i < first->size(); i++)
 			reachedBool &= first->at(i) == second->at(i);
 
