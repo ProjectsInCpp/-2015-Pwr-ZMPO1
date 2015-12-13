@@ -137,7 +137,6 @@
     <ClInclude Include="Heksa.h" />
     <ClInclude Include="HexaInToTetradesNBCAdapter.h" />
     <ClInclude Include="Init.h" />
-    <ClInclude Include="EndPOJO\IValue.h" />
     <ClInclude Include="Modulator.h" />
     <ClInclude Include="NBC.h" />
     <ClInclude Include="NUtils.h" />

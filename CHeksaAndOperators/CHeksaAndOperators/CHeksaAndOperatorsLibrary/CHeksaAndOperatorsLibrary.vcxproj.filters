@@ -66,9 +66,6 @@
     <ClInclude Include="DeleteParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="EndPOJO\IValue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

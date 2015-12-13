@@ -27,47 +27,62 @@ int main()
 
 	vector<int> *values;
 
+	// ************************** IMPORTANT ******************************************* 
+	//float val1 = 2.0;
+	//cout << " ************************** HEXA ********************* " << endl;
+	//hexaRepresentation();
+	//cout << endl;cout << endl;
 
-	float val1 = 2.0;
-	cout << " ************************** HEXA ********************* " << endl;
-	hexaRepresentation();
-	cout << endl;cout << endl;
+	//cout << " ************************** HEXA_FROM_MULTI ********************* " << endl;
+	//values = new vector<int>();
+	//values->push_back(10);
+	//values->push_back(15);
 
-	cout << " ************************** HEXA_FROM_MULTI ********************* " << endl;
-	values = new vector<int>();
-	values->push_back(10);
-	values->push_back(15);
+	//multiRepresentation(values,16);
+	//cout << endl;cout << endl;
 
-	multiRepresentation(values,16);
-	cout << endl;cout << endl;
+	//cout << " ************************** OCTA ********************* " << endl;
+	//octaRepresentation();
+	//cout << endl;cout << endl;
 
-	cout << " ************************** OCTA ********************* " << endl;
-	octaRepresentation();
-	cout << endl;cout << endl;
+	//cout << " ************************** OCTA_FROM_MULTI ********************* " << endl;
+	//values = new vector<int>();
+	//values->push_back(2);
+	//values->push_back(5);
+	//values->push_back(7);
 
-	cout << " ************************** OCTA_FROM_MULTI ********************* " << endl;
-	values = new vector<int>();
-	values->push_back(2);
-	values->push_back(5);
-	values->push_back(7);
+	//multiRepresentation(values, 8);
+	//cout << endl;cout << endl;
 
-	multiRepresentation(values, 8);
-	cout << endl;cout << endl;
+	//cout << " ************************** SEVEN ********************* " << endl;
+	////sevenRepresentation();
 
-	cout << " ************************** SEVEN ********************* " << endl;
-	//sevenRepresentation();
+	//cout << " ************************** SEVEN_FROM_MULTI ********************* " << endl;
+	//values = new vector<int>();
+	//values->push_back(3);
+	//values->push_back(2);
+	//values->push_back(5);
+	//values->push_back(0);
 
-	cout << " ************************** SEVEN_FROM_MULTI ********************* " << endl;
-	values = new vector<int>();
-	values->push_back(3);
-	values->push_back(2);
-	values->push_back(5);
-	values->push_back(0);
+	//multiRepresentation(values, 7);
+	//cout << endl;cout << endl;
 
-	multiRepresentation(values, 7);
-	cout << endl;cout << endl;
+	//cout << endl;cout << endl;
+	// ************************** IMPORTANT ******************************************* 
 
-	cout << endl;cout << endl;
+	string chain = "0A12";
+	chain.end();
+
+	vector<int> newVec(chain.begin(), chain.end());
+
+	for (vector<int>::iterator it = newVec.begin();it != newVec.end();++it)
+	{
+		cout << *it;
+	}
+
+	cout << endl;
+	getchar();
+
 	//Representation17();
 	//cout << endl;cout << endl;
 

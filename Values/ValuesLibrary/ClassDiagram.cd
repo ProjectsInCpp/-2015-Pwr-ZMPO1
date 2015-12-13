@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CAlphabet" Collapsed="true">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAgAAAAAAAABAAAABAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Alphabet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IValue" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAABAAAAhAAAAAAAAAAAAAAAgIAAAAAMA=</HashCode>
+      <FileName>IValue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPositionalValue">
+    <Position X="6" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAEAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>PositionalValue.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_alphabet" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CDecimal" Collapsed="true">
+    <Position X="9" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Decimal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CBinary" Collapsed="true">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Binary.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CBinaryDecimal" Collapsed="true">
+    <Position X="6" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>BinaryDecimal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CBCDplus3" Collapsed="true">
+    <Position X="6" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>BCDplus3.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CU1" Collapsed="true">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>U1.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CU2" Collapsed="true">
+    <Position X="3.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>U2.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
