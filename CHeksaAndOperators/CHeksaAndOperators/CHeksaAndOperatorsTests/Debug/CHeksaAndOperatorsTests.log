@@ -1,19 +1,17 @@
-﻿Build started 12/12/2015 12:06:45 PM.
+﻿Build started 12/13/2015 12:16:03 PM.
      1>Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsTests\CHeksaAndOperatorsTests.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsLibrary" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Debug\CHeksaAndOperatorsTests.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /FC /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsLibrary" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\CHeksaAndOperatorsTests.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /FC /errorReport:prompt FunctionalClassesTests\CBinaryCombilerTests.cpp HexInToTetradesNBCFromCHexaMinusTests.cpp TransparentTests\HexInToTetradesNBCFromCHexaPlusTests.cpp TransparentTests\PullingHexaValuesFromHexa.cpp TransparentTests\TestCNBCTetradeTransparentlyFromCNBC.cpp TransparentTests\TestCNBCTransparentlyFromCCharArray.cpp TransparentTests\TestCPositionalSignValuePullingMinusSign.cpp TransparentTests\TestCPositionalSignValuePullingPlusSign.cpp TransparentTests\TestCPositionalSignValueTransparentlyFromCCharArray.cpp TransparentTests\TestNUtils_HexaCharToBinarySimplyChars.cpp
-         TestNUtils_HexaCharToBinarySimplyChars.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsLibrary" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\CHeksaAndOperatorsTests.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /FC /errorReport:prompt HexInToTetradesNBCFromCHexaMinusTests.cpp TransparentTests\HexInToTetradesNBCFromCHexaPlusTests.cpp TransparentTests\PullingHexaValuesFromHexa.cpp TransparentTests\TestCNBCTetradeTransparentlyFromCNBC.cpp TransparentTests\TestCNBCTransparentlyFromCCharArray.cpp TransparentTests\TestCPositionalSignValuePullingMinusSign.cpp TransparentTests\TestCPositionalSignValuePullingPlusSign.cpp TransparentTests\TestCPositionalSignValueTransparentlyFromCCharArray.cpp
          TestCPositionalSignValueTransparentlyFromCCharArray.cpp
          TestCPositionalSignValuePullingPlusSign.cpp
          TestCPositionalSignValuePullingMinusSign.cpp
+         Generating Code...
+         Compiling...
          TestCNBCTransparentlyFromCCharArray.cpp
          TestCNBCTetradeTransparentlyFromCNBC.cpp
          PullingHexaValuesFromHexa.cpp
          HexInToTetradesNBCFromCHexaPlusTests.cpp
          HexInToTetradesNBCFromCHexaMinusTests.cpp
-         CBinaryCombilerTests.cpp
          Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsTests.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Clouds\OneDrive\GitHub\-2015-11-Pwr-Cpp-ZMPO-Ex2_2-\CHeksaAndOperators\CHeksaAndOperators\Debug" /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\lib" CHeksaAndOperatorsLibrary.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsTests.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsTests.lib" /MACHINE:X86 /DLL Debug\CBinaryCombilerTests.obj
@@ -29,9 +27,12 @@
          Debug\TestNUtils_HexaCharToBinarySimplyChars.obj
          "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsLibrary.lib"
             Creating library D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsTests.lib and object D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsTests.exp
-         CHeksaAndOperatorsTests.vcxproj -> D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsTests.dll
-     1>Done Building Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsTests\CHeksaAndOperatorsTests.vcxproj" (Build target(s)).
+     1>TestCPositionalSignValuePullingMinusSign.obj : error LNK2019: unresolved external symbol "public: __thiscall CPositionalValueOld::CPositionalValueOld(class std::vector<char,class std::allocator<char> > *,char,char *)" (??0CPositionalValueOld@@QAE@PAV?$vector@DV?$allocator@D@std@@@std@@DPAD@Z) referenced in function "public: void __thiscall ZMPO2_2_Tests::TestCPositionalValue_PullingSignMinus::InsertingEmptyChain_TestOfProperAchievingDestiny(void)" (?InsertingEmptyChain_TestOfProperAchievingDestiny@TestCPositionalValue_PullingSignMinus@ZMPO2_2_Tests@@QAEXXZ)
+     1>TestCPositionalSignValuePullingPlusSign.obj : error LNK2001: unresolved external symbol "public: __thiscall CPositionalValueOld::CPositionalValueOld(class std::vector<char,class std::allocator<char> > *,char,char *)" (??0CPositionalValueOld@@QAE@PAV?$vector@DV?$allocator@D@std@@@std@@DPAD@Z)
+     1>TestCPositionalSignValueTransparentlyFromCCharArray.obj : error LNK2001: unresolved external symbol "public: __thiscall CPositionalValueOld::CPositionalValueOld(class std::vector<char,class std::allocator<char> > *,char,char *)" (??0CPositionalValueOld@@QAE@PAV?$vector@DV?$allocator@D@std@@@std@@DPAD@Z)
+     1>D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\Debug\CHeksaAndOperatorsTests.dll : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsTests\CHeksaAndOperatorsTests.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:04.39
+Time Elapsed 00:00:04.17

@@ -40,7 +40,7 @@ namespace ZMPO2_2_Tests
 			inChain1[3] = '2';
 			inChain1[4] = '\0';
 
-			CPositionalValue *temp = new CPositionalValue(&acceptedValues, expectedSize, inChain1);
+			CPositionalValueOld *temp = new CPositionalValueOld(&acceptedValues, expectedSize, inChain1);
 
 			//act
 			char reachedVal0 = temp->GetVal()[0];
@@ -94,7 +94,7 @@ namespace ZMPO2_2_Tests
 			inChain1[6] = '0';
 			inChain1[7] = '\0';
 
-			CPositionalValue *temp = new CPositionalValue(&acceptedValues, expectedSize, inChain1);
+			CPositionalValueOld *temp = new CPositionalValueOld(&acceptedValues, expectedSize, inChain1);
 			int reachedSign = temp->GetSign();
 
 			//act
@@ -144,7 +144,7 @@ namespace ZMPO2_2_Tests
 			inChain1[2] = '1';
 			inChain1[3] = '\0';
 
-			CPositionalValue *temp = new CPositionalValue(&acceptedValues, expectedSize, inChain1);
+			CPositionalValueOld *temp = new CPositionalValueOld(&acceptedValues, expectedSize, inChain1);
 
 			//act
 			char reachedVal0 = temp->GetVal()[0];
@@ -203,7 +203,7 @@ namespace ZMPO2_2_Tests
 			inChain1[4] = '5';
 			inChain1[5] = '\0';
 
-			CPositionalValue *temp = new CPositionalValue(&acceptedValues, expectedSize, inChain1);
+			CPositionalValueOld *temp = new CPositionalValueOld(&acceptedValues, expectedSize, inChain1);
 
 			//act
 			char reachedVal0 = temp->GetVal()[0];
@@ -264,7 +264,7 @@ namespace ZMPO2_2_Tests
 			inChain1[0] = '-';
 			inChain1[1] = '\0';
 
-			CPositionalValue *temp = new CPositionalValue(&acceptedValues, expectedSize, inChain1);
+			CPositionalValueOld *temp = new CPositionalValueOld(&acceptedValues, expectedSize, inChain1);
 
 			//act
 			char reachedVal0 = temp->GetVal()[0];

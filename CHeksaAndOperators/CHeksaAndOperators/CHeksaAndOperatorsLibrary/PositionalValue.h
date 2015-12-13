@@ -3,8 +3,8 @@
 #include "NUtils.h"
 #include "Alphabet.h"
 
-class CPositionalValue : public CAlphabet
+class CPositionalValueOld : public CAlphabet
 {
 public:
-	CPositionalValue(vector<char>* acceptedValues, char length, char* val);
+	CPositionalValueOld(vector<char>* acceptedValues, char length, char* val);
 };

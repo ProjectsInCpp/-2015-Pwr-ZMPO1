@@ -1,22 +1,16 @@
-﻿Build started 12/12/2015 12:09:12 PM.
+﻿Build started 12/13/2015 12:16:01 PM.
      1>Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsLibrary\CHeksaAndOperatorsLibrary.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\CHeksaAndOperatorsLibrary.pch" /Fo"Debug\\" /Fd"Debug\CHeksaAndOperatorsLibrary.pdb" /Gd /TP /analyze- /errorReport:prompt Alphabet.cpp Heksa.cpp HexaInToTetradesNBCAdapter.cpp NBC.cpp PositionalValue.cpp TetradeNBC.cpp
+         PositionalValue.cpp
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\positionalvalue.cpp(4): error C2653: 'CPositionalValue': is not a class or namespace name
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\positionalvalue.cpp(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\positionalvalue.cpp(6): error C2550: 'CPositionalValue': constructor initializer lists are only allowed on constructor definitions
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\positionalvalue.cpp(8): warning C4508: 'CPositionalValue': function should return a value; 'void' return type assumed
+         NBC.cpp
+         HexaInToTetradesNBCAdapter.cpp
          Alphabet.cpp
-     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(8): error C2039: 'length': is not a member of 'CAlphabet'
-         d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.h(7): note: see declaration of 'CAlphabet'
-     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(9): error C2039: 'length': is not a member of 'CAlphabet'
-         d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.h(7): note: see declaration of 'CAlphabet'
-     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(9): error C3078: array size must be specified in new expressions
-     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(11): error C2039: 'length': is not a member of 'CAlphabet'
-         d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.h(7): note: see declaration of 'CAlphabet'
-     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(81): error C2440: 'return': cannot convert from 'std::vector<char,std::allocator<char>>' to 'char *'
-         d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(81): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(86): error C2451: conditional expression of type 'std::vector<char,std::allocator<char>>' is illegal
-         d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(86): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(87): error C2039: 'length': is not a member of 'CAlphabet'
-         d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.h(7): note: see declaration of 'CAlphabet'
-     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(91): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(10): error C2679: binary '=': no operator found which takes a right-hand operand of type 'char *' (or there is no acceptable conversion)
          c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(978): note: could be 'std::vector<char,std::allocator<char>> &std::vector<char,std::allocator<char>>::operator =(const std::vector<char,std::allocator<char>> &)'
          c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(956): note: or       'std::vector<char,std::allocator<char>> &std::vector<char,std::allocator<char>>::operator =(std::initializer_list<_Elem>)'
                  with
@@ -24,21 +18,27 @@
                      _Elem=char
                  ]
          c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(850): note: or       'std::vector<char,std::allocator<char>> &std::vector<char,std::allocator<char>>::operator =(std::vector<char,std::allocator<char>> &&) noexcept(<expr>)'
-         d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(91): note: while trying to match the argument list '(std::vector<char,std::allocator<char>>, int)'
-     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(101): error C2039: 'length': is not a member of 'CAlphabet'
-         d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.h(7): note: see declaration of 'CAlphabet'
-         Generating Code...
-         Compiling...
-         Heksa.cpp
+         d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(10): note: while trying to match the argument list '(std::vector<char,std::allocator<char>>, char *)'
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(80): error C2440: 'return': cannot convert from 'std::vector<char,std::allocator<char>>' to 'char *'
+         d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(80): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(85): error C2451: conditional expression of type 'std::vector<char,std::allocator<char>>' is illegal
+         d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(85): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(90): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(978): note: could be 'std::vector<char,std::allocator<char>> &std::vector<char,std::allocator<char>>::operator =(const std::vector<char,std::allocator<char>> &)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(956): note: or       'std::vector<char,std::allocator<char>> &std::vector<char,std::allocator<char>>::operator =(std::initializer_list<_Elem>)'
+                 with
+                 [
+                     _Elem=char
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(850): note: or       'std::vector<char,std::allocator<char>> &std::vector<char,std::allocator<char>>::operator =(std::vector<char,std::allocator<char>> &&) noexcept(<expr>)'
+         d:\clouds\onedrive\github\-2015-pwr-zmpo1\cheksaandoperators\cheksaandoperators\cheksaandoperatorslibrary\alphabet.cpp(90): note: while trying to match the argument list '(std::vector<char,std::allocator<char>>, int)'
          Generating Code...
          Compiling...
          TetradeNBC.cpp
-         PositionalValue.cpp
-         NBC.cpp
-         HexaInToTetradesNBCAdapter.cpp
+         Heksa.cpp
          Generating Code...
      1>Done Building Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\CHeksaAndOperators\CHeksaAndOperators\CHeksaAndOperatorsLibrary\CHeksaAndOperatorsLibrary.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:02.13
+Time Elapsed 00:00:02.77

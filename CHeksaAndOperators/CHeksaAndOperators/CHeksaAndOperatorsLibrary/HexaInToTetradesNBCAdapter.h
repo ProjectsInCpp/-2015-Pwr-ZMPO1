@@ -3,7 +3,7 @@
 #include "TetradeNBC.h"
 #include <Windows.h>
 
-class CHexaInToTetradesNBCAdapter : public CPositionalValue
+class CHexaInToTetradesNBCAdapter : public CPositionalValueOld
 {
 	CTetradeNBC *values = nullptr;
 

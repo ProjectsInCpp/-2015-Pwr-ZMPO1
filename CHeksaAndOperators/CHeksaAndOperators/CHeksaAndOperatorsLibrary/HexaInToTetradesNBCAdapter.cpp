@@ -2,7 +2,7 @@
 #include "HexaInToTetradesNBCAdapter.h"
 
 CHexaInToTetradesNBCAdapter::CHexaInToTetradesNBCAdapter(char length, char* val)
-	: CPositionalValue
+	: CPositionalValueOld
 	(new vector<char>{
 	'1','2','3','4','5',
 	'6','7','8','9',

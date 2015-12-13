@@ -2,7 +2,7 @@
 #include "NBC.h"
 
 CNBC::CNBC(char length, char* val)
-	: CPositionalValue(
+	: CPositionalValueOld(
 		new vector<char>{ '1','\0' }, length, val)
 {
 
