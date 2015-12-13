@@ -1,15 +1,21 @@
-﻿Build started 12/13/2015 1:51:29 PM.
+﻿Build started 12/13/2015 3:06:22 PM.
      1>Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\ValuesTests\ValuesTests.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\ValuesLibrary" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ValuesTests.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /FC /errorReport:prompt unittest1.cpp
-         unittest1.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\ValuesLibrary" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ValuesTests.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /FC /errorReport:prompt CAlphabetTests.cpp NUtilsTests.cpp
+         CAlphabetTests.cpp
+         Generating Code...
+         Compiling...
+         NUtilsTests.cpp
+         Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesTests.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug" /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\lib" ValuesLibrary.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesTests.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesTests.lib" /MACHINE:X86 /DLL Debug\stdafx.obj
-         Debug\unittest1.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesTests.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug" /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\lib" ValuesLibrary.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesTests.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesTests.lib" /MACHINE:X86 /DLL Debug\NUtilsTests.obj
+         Debug\stdafx.obj
+         Debug\CAlphabetTests.obj
          "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesLibrary.lib"
+            Creating library D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesTests.lib and object D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesTests.exp
          ValuesTests.vcxproj -> D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesTests.dll
      1>Done Building Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\ValuesTests\ValuesTests.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.83
+Time Elapsed 00:00:01.73

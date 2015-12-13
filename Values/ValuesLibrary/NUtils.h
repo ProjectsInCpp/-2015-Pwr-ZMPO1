@@ -1,15 +1,28 @@
 #pragma once
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
 namespace NUtils
 {
-	int ToEqualsInt(char aValue0){
-		return int(aValue0) - 48;
+	inline int ToEqualsInt(char aValue0){
+		int upper = toupper(aValue0);
+		int end = 0;
+
+		if(upper>= 65 && upper <= 90)
+		{
+			end = upper - 65 + 10;
+		}else
+		if(upper>=48 && upper <= 57)
+		{
+			end = upper - 48;
+		}
+
+		return end;
 	}
 
-	int ToEqualsSign(char aSign)
+	inline int ToEqualsSign(char aSign)
 	{
 		int sign = 0;
 
@@ -19,17 +32,22 @@ namespace NUtils
 		return sign;
 	}
 
-	vector<int> ToIntVec(string *aChain)
+	inline vector<int>* ToIntVec(string *aChain)
 	{
-		vector<char>* buff = new vector<char>(aChain->begin(),aChain->end());
 		vector<int>* retVal = new vector<int>();
 
-		for (vector<char>::iterator it = buff->begin();it != buff->end();++it)
-			retVal->push_back(ToEqualsInt(*it));
+		std::transform(aChain->begin(), aChain->end(), retVal->begin(), NUtils::ToEqualsInt);
 		
-		delete buff;
+		return retVal;
+	}
 
-		return *retVal;
+	inline bool AreVOIEquals(vector<int>* first, vector<int>* second)
+	{
+		bool reachedBool = true;
+		for (size_t i = 0; i < first->size(); i++)
+			reachedBool &= first->at(i) == second->at(i);
+
+		return reachedBool;
 	}
 };
 

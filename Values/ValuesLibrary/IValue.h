@@ -13,7 +13,7 @@ protected:
 
 public:
 	IValue(char base, string val = "" , char sign = '0'){
-		_val = &NUtils::ToIntVec(&val);
+		_val = NUtils::ToIntVec(&val);
 		_sign = NUtils::ToEqualsSign(sign);
 		_base = NUtils::ToEqualsInt(base);
 	}
@@ -23,12 +23,8 @@ public:
 		delete _val;
 	}
 
-	virtual vector<int> GetVal() = 0;
+	virtual vector<int>* GetVal() = 0;
 	virtual int GetBase() = 0;
 	virtual int GetSign() = 0;
-
-	//virtual string ToString(){
-	//	return 
-	//}
 };
 
