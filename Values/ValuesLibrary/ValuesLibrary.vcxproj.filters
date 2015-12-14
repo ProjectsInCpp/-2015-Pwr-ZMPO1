@@ -74,6 +74,9 @@
     <ClCompile Include="Add.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

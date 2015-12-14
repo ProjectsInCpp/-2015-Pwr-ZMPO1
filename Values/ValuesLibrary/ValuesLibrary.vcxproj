@@ -148,6 +148,7 @@
     <ClCompile Include="Binary.cpp" />
     <ClCompile Include="BinaryDecimal.cpp" />
     <ClCompile Include="IValue.cpp" />
+    <ClCompile Include="NUtils.cpp" />
     <ClCompile Include="Positional.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

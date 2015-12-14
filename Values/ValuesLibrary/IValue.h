@@ -25,8 +25,6 @@ public:
 	virtual char GetBase();
 	virtual int GetIntBase();
 	virtual int GetSign();
-
-	static vector<vector<int>*>* allign(CPositional* first, CPositional* second);
 };
 
 #endif
