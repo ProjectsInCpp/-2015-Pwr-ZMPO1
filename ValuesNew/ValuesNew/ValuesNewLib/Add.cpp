@@ -27,8 +27,6 @@ CPositional* CAdd::apply(CPositional* first, CPositional* second)
 	string* retStr = new string(retRev->begin(), retRev->end());
 
 	delete retVal;
-	delete first;
-	delete second;
 
 	CPositional* end = new CPositional(NUtils::ToEqualsChar(base), *retStr, sign);
 	return end;

@@ -13,6 +13,9 @@ private:
 
 public:
 	CAlphabet(char base, const string& val = "", char sign = '0');
+	CAlphabet();
+	CAlphabet(const CAlphabet& val);
+	~CAlphabet();
 };
 
 #endif

@@ -1,8 +1,8 @@
-﻿Build started 12/14/2015 5:18:05 PM.
+﻿Build started 12/14/2015 5:56:40 PM.
      1>Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewLib\ValuesNewLib.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ValuesNewLib.pch" /Fo"Debug\\" /Fd"Debug\ValuesNewLib.pdb" /Gd /TP /analyze- /errorReport:prompt Positional.cpp
-         Positional.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ValuesNewLib.pch" /Fo"Debug\\" /Fd"Debug\ValuesNewLib.pdb" /Gd /TP /analyze- /errorReport:prompt Alphabet.cpp
+         Alphabet.cpp
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug\ValuesNewLib.lib" /NOLOGO Debug\ValuesNewLib.res
          Debug\Add.obj
@@ -25,4 +25,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.01
+Time Elapsed 00:00:00.83

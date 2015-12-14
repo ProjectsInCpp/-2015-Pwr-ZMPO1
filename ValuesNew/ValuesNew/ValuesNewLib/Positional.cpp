@@ -10,6 +10,19 @@ CPositional::CPositional(char base, const string& val, char sign)
 	this->_val = replaceWrongWithZero(this->_val);
 }
 
+CPositional::CPositional(const CPositional &val)
+	: IValue(val)
+{
+	_alfa = new CAlphabet();
+	_alfa = val._alfa;
+}
+
+CPositional::CPositional()
+	: IValue()
+{
+	_alfa = new CAlphabet();
+}
+
 vector<int>* CPositional::replaceWrongWithZero(vector<int>* value)
 {
 	vector<int>* retVal = new vector<int>(value->begin(), value->end());
@@ -32,6 +45,7 @@ vector<int>* CPositional::replaceWrongWithZero(vector<int>* value)
 
 CPositional::~CPositional()
 {
+
 	delete _alfa;
 }
 
@@ -68,6 +82,8 @@ vector<vector<int>*>* CPositional::allign(CPositional* first, CPositional* secon
 
 	return retVal;
 }
+
+
 
 //vector<int>* quotientProductMethod(vector<int>* aVal, int inBase)
 //{

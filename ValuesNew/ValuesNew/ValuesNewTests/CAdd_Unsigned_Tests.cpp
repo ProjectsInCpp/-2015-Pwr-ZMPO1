@@ -23,6 +23,7 @@ namespace ValuesTests
 			CPositional* result = nullptr;
 
 			auto operation = new CAdd();
+	
 			result = operation->apply(first, second);
 
 			vector<int>* expected = new vector<int>();
@@ -36,6 +37,12 @@ namespace ValuesTests
 
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
+
+			//DebugBreak();
+
+			delete first;
+			delete second;
+			delete result;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
@@ -65,6 +72,10 @@ namespace ValuesTests
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
 
+			delete first;
+			delete second;
+			delete result;
+
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
 
@@ -92,6 +103,10 @@ namespace ValuesTests
 
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
+
+			delete first;
+			delete second;
+			delete result;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
