@@ -17,7 +17,7 @@ public:
 	CPositional();
 	CPositional(char base, const string& val, char sign);
 	CPositional(const CPositional &val);
-	~CPositional();
+	virtual ~CPositional();
 
 	static vector<vector<int>*>* allign(CPositional* first, CPositional* second);
 

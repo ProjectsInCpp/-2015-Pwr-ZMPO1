@@ -38,11 +38,14 @@ namespace ValuesTests
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
 
-			//DebugBreak();
-
 			delete first;
 			delete second;
 			delete result;
+			first = nullptr;
+			second = nullptr;
+			result = nullptr;
+			expected = nullptr;
+			reached = nullptr;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
@@ -75,6 +78,11 @@ namespace ValuesTests
 			delete first;
 			delete second;
 			delete result;
+			first = nullptr;
+			second = nullptr;
+			result = nullptr;
+			expected = nullptr;
+			reached = nullptr;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
@@ -107,6 +115,11 @@ namespace ValuesTests
 			delete first;
 			delete second;
 			delete result;
+			first = nullptr;
+			second = nullptr;
+			result = nullptr;
+			expected = nullptr;
+			reached = nullptr;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}

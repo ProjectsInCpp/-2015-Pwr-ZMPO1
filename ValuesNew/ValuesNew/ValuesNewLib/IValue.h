@@ -19,7 +19,7 @@ public:
 	IValue(const IValue& val);
 	IValue(char base, string val = "", char sign = '0');
 
-	~IValue();
+	virtual ~IValue();
 
 	virtual vector<int>* GetVal();
 	virtual char GetBase();

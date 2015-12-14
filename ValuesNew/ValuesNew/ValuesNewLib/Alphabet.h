@@ -15,7 +15,7 @@ public:
 	CAlphabet(char base, const string& val = "", char sign = '0');
 	CAlphabet();
 	CAlphabet(const CAlphabet& val);
-	~CAlphabet();
+	virtual ~CAlphabet();
 };
 
 #endif

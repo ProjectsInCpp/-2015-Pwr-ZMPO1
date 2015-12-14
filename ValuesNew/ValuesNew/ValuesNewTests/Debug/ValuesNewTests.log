@@ -1,6 +1,11 @@
-﻿Build started 12/14/2015 5:57:05 PM.
+﻿Build started 12/14/2015 6:21:13 PM.
      1>Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewTests\ValuesNewTests.vcxproj" on node 2 (Build target(s)).
-     1>Link:
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewLib" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ValuesNewTests.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /FC /errorReport:prompt CAdd_Signed_Test.cpp CAdd_Unsigned_Tests.cpp
+         CAdd_Unsigned_Tests.cpp
+         CAdd_Signed_Test.cpp
+         Generating Code...
+       Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug\ValuesNewTests.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug" /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\lib" ValuesNewLib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug\ValuesNewTests.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug\ValuesNewTests.lib" /MACHINE:X86 /DLL Debug\CAdd_Signed_Test.obj
          Debug\CAdd_Unsigned_Tests.obj
          Debug\CAlphabet_Tests.obj
@@ -18,4 +23,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.42
+Time Elapsed 00:00:01.76

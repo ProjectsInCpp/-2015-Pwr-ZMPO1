@@ -13,38 +13,47 @@ namespace ValuesTests
 	{
 	public:
 
-		//TEST_METHOD(CADD_APPLY_M12_M19_BASE10)
-		//{
-		//	// arrange	
-		//	char base = 'A';
-		//	char sign = '1';
-		//	CPositional* first = new CPositional(base, "12", sign);
-		//	CPositional* second = new CPositional(base, "19", sign);
-		//	CPositional* result = nullptr;
+		TEST_METHOD(CADD_APPLY_M12_M19_BASE10)
+		{
+			// arrange	
+			char base = 'A';
+			char sign = '1';
+			CPositional* first = new CPositional(base, "12", sign);
+			CPositional* second = new CPositional(base, "19", sign);
+			CPositional* result = nullptr;
 
-		//	auto operation = new CAdd();
-		//	result = operation->apply(first, second);
+			auto operation = new CAdd();
+			result = operation->apply(first, second);
 
-		//	vector<int>* expected = new vector<int>();
-		//	int expectedSign = 1;
-		//	int reachedSign = 0;
-		//	bool expectedBool = true;
-		//	bool reachedBool = true;
+			vector<int>* expected = new vector<int>();
+			int expectedSign = 1;
+			int reachedSign = 0;
+			bool expectedBool = true;
+			bool reachedBool = true;
 
-		//	expected->push_back(3);
-		//	expected->push_back(1);
+			expected->push_back(3);
+			expected->push_back(1);
 
 
-		//	// act
-		//	vector<int>* reached = result->GetVal();
-		//	reachedSign = result->GetSign();
+			// act
+			vector<int>* reached = result->GetVal();
+			reachedSign = result->GetSign();
 
-		//	// assert
-		//	reachedBool = NUtils::AreVOIEquals(expected, reached);
+			// assert
+			reachedBool = NUtils::AreVOIEquals(expected, reached);
 
-		//	Assert::IsTrue(expectedSign == reachedSign);
-		//	Assert::IsTrue(expectedBool & reachedBool);
-		//}
+			delete first;
+			delete second;
+			delete result;
+			first = nullptr;
+			second= nullptr;
+			result= nullptr;
+			expected = nullptr;
+			reached = nullptr;
+
+			Assert::IsTrue(expectedSign == reachedSign);
+			Assert::IsTrue(expectedBool & reachedBool);
+		}
 
 		//TEST_METHOD(CADD_APPLY_12_M19_BASE10)
 		//{

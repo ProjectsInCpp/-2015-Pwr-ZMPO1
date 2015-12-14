@@ -28,6 +28,11 @@ namespace ValuesTests
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
 
+			delete binary;
+			binary = nullptr;
+			reached = nullptr;
+			expected = nullptr;
+
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
 
@@ -35,7 +40,7 @@ namespace ValuesTests
 		{
 			// arrange	
 			char base = '8';
-			CAlphabet* binary = new CAlphabet(base);
+			CAlphabet* octa = new CAlphabet(base);
 			vector<int>* expected = new vector<int>();
 			bool expectedBool = true;
 			bool reachedBool = true;
@@ -49,10 +54,15 @@ namespace ValuesTests
 			expected->push_back(7);
 
 			// act
-			vector<int>* reached = binary->GetVal();
+			vector<int>* reached = octa->GetVal();
 
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
+
+			delete octa;
+			octa = nullptr;
+			reached = nullptr;
+			expected = nullptr;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
@@ -61,7 +71,7 @@ namespace ValuesTests
 		{
 			// arrange	
 			char base = 'G';
-			CAlphabet* binary = new CAlphabet(base);
+			CAlphabet* hexa = new CAlphabet(base);
 			vector<int>* expected = new vector<int>();
 			bool expectedBool = true;
 			bool reachedBool = true;
@@ -83,10 +93,15 @@ namespace ValuesTests
 			expected->push_back(15);
 
 			// act
-			vector<int>* reached = binary->GetVal();
+			vector<int>* reached = hexa->GetVal();
 
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
+
+			delete hexa;
+			hexa = nullptr;
+			reached = nullptr;
+			expected = nullptr;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}

@@ -17,7 +17,7 @@ namespace ValuesTests
 			// arrange	
 			string chain = "1001";
 			char sign = '0';
-			IValue* decimal = new CBinary(chain, sign);
+			IValue* binary = new CBinary(chain, sign);
 
 			vector<int>* expected = new vector<int>();
 			bool expectedBool = true;
@@ -28,10 +28,15 @@ namespace ValuesTests
 			expected->push_back(1);
 
 			// act
-			vector<int>* reached = decimal->GetVal();
+			vector<int>* reached = binary->GetVal();
 
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
+
+			delete binary;
+			binary = nullptr;
+			reached = nullptr;
+			expected = nullptr;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
@@ -41,7 +46,7 @@ namespace ValuesTests
 			// arrange	
 			string chain = "9C5";
 			char sign = '0';
-			IValue* decimal = new CBinary(chain, sign);
+			IValue* binary = new CBinary(chain, sign);
 
 			vector<int>* expected = new vector<int>();
 			bool expectedBool = true;
@@ -51,10 +56,15 @@ namespace ValuesTests
 			expected->push_back(0);
 
 			// act
-			vector<int>* reached = decimal->GetVal();
+			vector<int>* reached = binary->GetVal();
 
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
+
+			delete binary;
+			binary = nullptr;
+			reached = nullptr;
+			expected = nullptr;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
@@ -64,7 +74,7 @@ namespace ValuesTests
 			// arrange	
 			string chain = "13241101";
 			char sign = '0';
-			IValue* decimal = new CBinary(chain, sign);
+			IValue* binary = new CBinary(chain, sign);
 
 			vector<int>* expected = new vector<int>();
 			bool expectedBool = true;
@@ -79,10 +89,15 @@ namespace ValuesTests
 			expected->push_back(1);
 
 			// act
-			vector<int>* reached = decimal->GetVal();
+			vector<int>* reached = binary->GetVal();
 
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
+
+			delete binary;
+			binary = nullptr;
+			reached = nullptr;
+			expected = nullptr;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}

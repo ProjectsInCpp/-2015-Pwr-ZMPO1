@@ -2,6 +2,7 @@
 #include "CppUnitTest.h"
 #include "Alphabet.h"
 #include <windows.h>
+#include <Decimal.h>
 //#include <Decimal.h>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -12,78 +13,93 @@ namespace ValuesTests
 	{
 	public:
 
-		//TEST_METHOD(CTOR_PLUS_945_10)
-		//{
-		//	// arrange	
-		//	string chain = "945";
-		//	char sign = '0';
-		//	IValue* decimal = new CDecimal(chain, sign);
+		TEST_METHOD(CTOR_PLUS_945_10)
+		{
+			// arrange	
+			string chain = "945";
+			char sign = '0';
+			IValue* decimal = new CDecimal(chain, sign);
 
-		//	vector<int>* expected = new vector<int>();
-		//	bool expectedBool = true;
-		//	bool reachedBool = true;
-		//	expected->push_back(9);
-		//	expected->push_back(4);
-		//	expected->push_back(5);
+			vector<int>* expected = new vector<int>();
+			bool expectedBool = true;
+			bool reachedBool = true;
+			expected->push_back(9);
+			expected->push_back(4);
+			expected->push_back(5);
 
-		//	// act
-		//	vector<int>* reached = decimal->GetVal();
+			// act
+			vector<int>* reached = decimal->GetVal();
 
-		//	// assert
-		//	reachedBool = NUtils::AreVOIEquals(expected, reached);
+			// assert
+			reachedBool = NUtils::AreVOIEquals(expected, reached);
 
-		//	Assert::IsTrue(expectedBool & reachedBool);
-		//}
+			delete decimal;
+			decimal = nullptr;
+			reached = nullptr;
+			expected = nullptr;
 
-		//TEST_METHOD(CTOR_PLUS_9A5_10)
-		//{
-		//	// arrange	
-		//	string chain = "9C5";
-		//	char sign = '0';
-		//	IValue* decimal = new CDecimal(chain, sign);
+			Assert::IsTrue(expectedBool & reachedBool);
+		}
 
-		//	vector<int>* expected = new vector<int>();
-		//	bool expectedBool = true;
-		//	bool reachedBool = true;
-		//	expected->push_back(9);
-		//	expected->push_back(0);
-		//	expected->push_back(5);
+		TEST_METHOD(CTOR_PLUS_9A5_10)
+		{
+			// arrange	
+			string chain = "9C5";
+			char sign = '0';
+			IValue* decimal = new CDecimal(chain, sign);
 
-		//	// act
-		//	vector<int>* reached = decimal->GetVal();
+			vector<int>* expected = new vector<int>();
+			bool expectedBool = true;
+			bool reachedBool = true;
+			expected->push_back(9);
+			expected->push_back(0);
+			expected->push_back(5);
 
-		//	// assert
-		//	reachedBool = NUtils::AreVOIEquals(expected, reached);
+			// act
+			vector<int>* reached = decimal->GetVal();
 
-		//	Assert::IsTrue(expectedBool & reachedBool);
-		//}
+			// assert
+			reachedBool = NUtils::AreVOIEquals(expected, reached);
 
-		//TEST_METHOD(CTOR_PLUS_13241101_10)
-		//{
-		//	// arrange	
-		//	string chain = "13241101";
-		//	char sign = '0';
-		//	IValue* decimal = new CDecimal(chain, sign);
+			delete decimal;
+			decimal = nullptr;
+			reached = nullptr;
+			expected = nullptr;
 
-		//	vector<int>* expected = new vector<int>();
-		//	bool expectedBool = true;
-		//	bool reachedBool = true;
-		//	expected->push_back(1);
-		//	expected->push_back(3);
-		//	expected->push_back(2);
-		//	expected->push_back(4);
-		//	expected->push_back(1);
-		//	expected->push_back(1);
-		//	expected->push_back(0);
-		//	expected->push_back(1);
+			Assert::IsTrue(expectedBool & reachedBool);
+		}
 
-		//	// act
-		//	vector<int>* reached = decimal->GetVal();
+		TEST_METHOD(CTOR_PLUS_13241101_10)
+		{
+			// arrange	
+			string chain = "13241101";
+			char sign = '0';
+			IValue* decimal = new CDecimal(chain, sign);
 
-		//	// assert
-		//	reachedBool = NUtils::AreVOIEquals(expected, reached);
+			vector<int>* expected = new vector<int>();
+			bool expectedBool = true;
+			bool reachedBool = true;
+			expected->push_back(1);
+			expected->push_back(3);
+			expected->push_back(2);
+			expected->push_back(4);
+			expected->push_back(1);
+			expected->push_back(1);
+			expected->push_back(0);
+			expected->push_back(1);
 
-		//	Assert::IsTrue(expectedBool & reachedBool);
-		//}
+			// act
+			vector<int>* reached = decimal->GetVal();
+
+			// assert
+			reachedBool = NUtils::AreVOIEquals(expected, reached);
+
+			delete decimal;
+			decimal = nullptr;
+			reached = nullptr;
+			expected = nullptr;
+
+			Assert::IsTrue(expectedBool & reachedBool);
+		}
 	};
 }

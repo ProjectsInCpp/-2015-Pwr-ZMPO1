@@ -30,6 +30,11 @@ namespace ValuesTests
 
 			boolean resultBool = !(expected ^ reached);
 
+			delete first;
+			delete second;
+			first = nullptr;
+			second = nullptr;
+
 			Assert::IsTrue(resultBool);
 		}
 
@@ -50,6 +55,10 @@ namespace ValuesTests
 			// assert
 
 			boolean resultBool = !(expected ^ reached);
+			delete first;
+			delete second;
+			first = nullptr;
+			second = nullptr;
 
 			Assert::IsTrue(resultBool);
 		}
@@ -71,6 +80,10 @@ namespace ValuesTests
 			// assert
 
 			boolean resultBool = !(expected ^ reached);
+			delete first;
+			delete second;
+			first = nullptr;
+			second = nullptr;
 
 			Assert::IsTrue(resultBool);
 		}
@@ -92,6 +105,10 @@ namespace ValuesTests
 			// assert
 
 			boolean resultBool = !(expected ^ reached);
+			delete first;
+			delete second;
+			first = nullptr;
+			second = nullptr;
 
 			Assert::IsTrue(resultBool);
 		}

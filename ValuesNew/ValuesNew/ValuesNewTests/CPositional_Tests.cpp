@@ -32,6 +32,10 @@ namespace ValuesTests
 
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
+			delete decimal;
+			decimal = nullptr;
+			reached = nullptr;
+			expected = nullptr;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
@@ -56,6 +60,10 @@ namespace ValuesTests
 
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
+			delete decimal;
+			decimal = nullptr;
+			reached = nullptr;
+			expected = nullptr;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
@@ -80,6 +88,10 @@ namespace ValuesTests
 
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
+			delete decimal;
+			decimal = nullptr;
+			reached = nullptr;
+			expected = nullptr;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
@@ -104,6 +116,10 @@ namespace ValuesTests
 
 			// assert
 			reachedBool = NUtils::AreVOIEquals(expected, reached);
+			delete decimal;
+			decimal = nullptr;
+			reached = nullptr;
+			expected = nullptr;
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
