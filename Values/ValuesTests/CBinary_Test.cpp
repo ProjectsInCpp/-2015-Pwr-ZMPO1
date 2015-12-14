@@ -2,7 +2,6 @@
 #include "CppUnitTest.h"
 #include "Alphabet.h"
 #include <windows.h>
-#include <Decimal.h>
 #include <Binary.h>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;

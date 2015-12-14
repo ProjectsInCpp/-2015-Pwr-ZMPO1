@@ -2,6 +2,8 @@
 #include <vector>
 #include <algorithm>
 
+#define BIN_BASE 2
+
 using namespace std;
 
 namespace NUtils
@@ -18,6 +20,25 @@ namespace NUtils
 			if (upper >= 48 && upper <= 57)
 			{
 				end = upper - 48;
+			}
+			else
+				end = -1;
+
+		return end;
+	}
+
+	inline char ToEqualsChar(int aValue0)
+	{
+		char end = 0;
+
+		if (aValue0 >= 10 && aValue0 <= 26)
+		{
+			end = aValue0 + 55;
+		}
+		else
+			if (aValue0 >= 0 && aValue0 <= 9)
+			{
+				end = aValue0 + 48;
 			}
 			else
 				end = -1;

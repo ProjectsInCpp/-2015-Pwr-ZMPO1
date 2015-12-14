@@ -14,13 +14,6 @@
       <FileName>IValue.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CDecimal" Collapsed="true">
-    <Position X="9" Y="4.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Decimal.h</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="CBinary" Collapsed="true">
     <Position X="6" Y="4.75" Width="1.5" />
     <TypeIdentifier>
@@ -65,6 +58,20 @@
     <ShowAsAssociation>
       <Field Name="_alfa" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="CFunctionalClass" Collapsed="true">
+    <Position X="14.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FunctionalClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="COperation" Collapsed="true">
+    <Position X="14.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Operation.h</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

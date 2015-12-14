@@ -1,6 +1,8 @@
 #pragma once
 #include "IValue.h"
 #include "Alphabet.h"
+//#include "Decimal.h"
+#include <iostream>
 
 class CPositional :
 	public IValue
@@ -36,9 +38,60 @@ public:
 		this->_val = replaceWrongWithZero(this->_val);
 	}
 
+	//CDecimal* ToDecimal()
+	//{
+	//	return HornerSchema();
+	//}
+
 	virtual ~CPositional()
 	{
 		delete _alfa;
 	}
+
+	//CDecimal* HornerSchema()
+	//{
+	//	bool firstStep = false;
+	//	string retVal = "";
+
+	//		//for (vector<int>::iterator it = this->GetVal()->begin();it != this->GetVal()->end();++it)
+	//		//{
+	//		//	firstStep = true;
+	//		//	retVal->push_back()
+	//		//}
+
+	//	return nullptr;
+	//}
+
+	//vector<int>* quotientProductMethod(vector<int>* aVal, int inBase)
+	//{
+	//	vector<int> *buffVal = new vector<int>();
+
+	//	for (vector<int>::reverse_iterator it = aVal->rbegin();it != aVal->rend();++it)
+	//	{
+	//		while (*it > 0)
+	//		{
+	//			buffVal->push_back(*it % BIN_BASE);
+	//			*it /= BIN_BASE;
+	//		}
+
+	//		while (buffVal->size() % wordSize(inBase) != 0)
+	//			buffVal->push_back(0);
+	//	}
+
+	//	vector<int> *outVal = new vector<int>();
+
+	//	for (vector<int>::reverse_iterator it = buffVal->rbegin();it != buffVal->rend();++it)
+	//	{
+	//		outVal->push_back(*it);
+	//	}
+
+	//	delete buffVal;
+	//	return outVal;
+	//}
+
+	//int wordSize(int inBase)
+	//{
+	//	return ceil(log2(inBase*1.0));
+	//}
 };
 

@@ -82,5 +82,77 @@ namespace ValuesTests
 
 			Assert::IsTrue(expectedBool & reachedBool);
 		}
+
+		TEST_METHOD(ToEqualChar_1)
+		{
+			// arrange	
+			char inVal = 1;
+			char expected = '1';
+			char reached = '0';
+			bool expectedBool = true;
+			bool reachedBool = true;
+
+			// act
+			reached = NUtils::ToEqualsChar(inVal);
+
+			// assert
+			reachedBool &= reached && expected;
+
+			Assert::IsTrue(expectedBool & reachedBool);
+		}
+
+		TEST_METHOD(ToEqualChar_9)
+		{
+			// arrange	
+			char inVal = 9;
+			char expected = '9';
+			char reached = '0';
+			bool expectedBool = true;
+			bool reachedBool = true;
+
+			// act
+			reached = NUtils::ToEqualsChar(inVal);
+
+			// assert
+			reachedBool &= reached && expected;
+
+			Assert::IsTrue(expectedBool & reachedBool);
+		}
+
+		TEST_METHOD(ToEqualChar_10)
+		{
+			// arrange	
+			int inVal = 10;
+			char expected = 'A';
+			char reached = '0';
+			bool expectedBool = true;
+			bool reachedBool = true;
+
+			// act
+			reached = NUtils::ToEqualsChar(inVal);
+
+			// assert
+			reachedBool &= reached && expected;
+
+			Assert::IsTrue(expectedBool & reachedBool);
+		}
+
+		TEST_METHOD(ToEqualChar_16)
+		{
+			// arrange	
+			int inVal = 16;
+			char expected = 'G';
+			char reached = '0';
+			bool expectedBool = true;
+			bool reachedBool = true;
+
+			// act
+			reached = NUtils::ToEqualsChar(inVal);
+
+			// assert
+			reachedBool &= reached && expected;
+
+			Assert::IsTrue(expectedBool & reachedBool);
+		}
 	};
 }

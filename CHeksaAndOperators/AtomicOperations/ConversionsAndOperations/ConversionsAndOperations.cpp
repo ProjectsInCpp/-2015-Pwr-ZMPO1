@@ -25,8 +25,24 @@ int main()
 	int i = 1;
 	int j = 1;
 
-	vector<int> *values;
+	vector<int> *values = new vector<int>();
+	values->push_back(0);
+	values->push_back(1);
+	values->push_back(2);
 
+	vector<int>::reverse_iterator it = values->rbegin();
+
+	cout << *it << endl;
+
+	it++;
+
+	cout << *it << endl;
+
+	//string a = "33";
+	//string b = "44";
+
+
+	//string c = a*b;
 	// ************************** IMPORTANT ******************************************* 
 	//float val1 = 2.0;
 	//cout << " ************************** HEXA ********************* " << endl;
@@ -70,18 +86,18 @@ int main()
 	//cout << endl;cout << endl;
 	// ************************** IMPORTANT ******************************************* 
 
-	string chain = "0A12";
-	chain.end();
+	//string chain = "0A12";
+	//chain.end();
 
-	vector<int> newVec(chain.begin(), chain.end());
+	//vector<int> newVec(chain.begin(), chain.end());
 
-	for (vector<int>::iterator it = newVec.begin();it != newVec.end();++it)
-	{
-		cout << *it;
-	}
+	//for (vector<int>::iterator it = newVec.begin();it != newVec.end();++it)
+	//{
+	//	cout << *it;
+	//}
 
-	cout << endl;
-	getchar();
+	//cout << endl;
+	//getchar();
 
 	//Representation17();
 	//cout << endl;cout << endl;
