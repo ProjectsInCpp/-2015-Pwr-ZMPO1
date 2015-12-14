@@ -1,4 +1,4 @@
-﻿Build started 12/14/2015 1:30:47 PM.
+﻿Build started 12/14/2015 2:25:22 PM.
      1>Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\ValuesTests\ValuesTests.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\ValuesLibrary" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ValuesTests.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /FC /errorReport:prompt CAdd_Tests.cpp
@@ -13,9 +13,10 @@
          Debug\stdafx.obj
          Debug\CAlphabet_Tests.obj
          "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesLibrary.lib"
+            Creating library D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesTests.lib and object D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesTests.exp
          ValuesTests.vcxproj -> D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\Debug\ValuesTests.dll
      1>Done Building Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\Values\ValuesTests\ValuesTests.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.73
+Time Elapsed 00:00:01.51
