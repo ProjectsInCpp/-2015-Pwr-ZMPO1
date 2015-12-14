@@ -44,7 +44,13 @@
     <ClCompile Include="CIntegration_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CAdd_Tests.cpp">
+    <ClCompile Include="CAdd_Unsigned_Tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CAdd_Signed_Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="COperators_Positional_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

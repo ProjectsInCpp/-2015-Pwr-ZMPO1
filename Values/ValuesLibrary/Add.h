@@ -13,7 +13,7 @@ public:
 		vector<int>* secondCopy = new vector<int>();
 
 		int base = first->GetIntBase();
-		char sign = '0';
+		char sign = NUtils::ToEqualsSign(detSign(first->GetSign(), second->GetSign()));
 
 		int sizeSub = first->GetVal()->size() - second->GetVal()->size();
 
@@ -56,8 +56,21 @@ public:
 		delete first;
 		delete second;
 
-		CPositional* end = new CPositional(NUtils::ToEqualsChar(base), *retStr, NUtils::ToEqualsInt(sign));
+		CPositional* end = new CPositional(NUtils::ToEqualsChar(base), *retStr, sign);
 		return end;
+	}
+
+private:
+	int detSign(int first , int second)
+	{
+		int retVal = 1;
+
+		if (first == second == 1)
+		{
+			
+		}
+
+		return retVal;
 	}
 };
 

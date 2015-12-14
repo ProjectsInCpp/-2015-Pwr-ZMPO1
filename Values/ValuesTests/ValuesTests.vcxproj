@@ -160,10 +160,12 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CAdd_Tests.cpp" />
+    <ClCompile Include="CAdd_Signed_Test.cpp" />
+    <ClCompile Include="CAdd_Unsigned_Tests.cpp" />
     <ClCompile Include="CBinary_Test.cpp" />
     <ClCompile Include="CDecimal_Test.cpp" />
     <ClCompile Include="CIntegration_Test.cpp" />
+    <ClCompile Include="COperators_Positional_Test.cpp" />
     <ClCompile Include="CPositional_Tests.cpp" />
     <ClCompile Include="NUtils_Tests.cpp" />
     <ClCompile Include="stdafx.cpp">

@@ -30,7 +30,6 @@ class CPositional :
 	}
 
 public:
-
 	CPositional(char base, const string& val, char sign)
 		: IValue(base, val, sign)
 	{
@@ -38,16 +37,36 @@ public:
 		this->_val = replaceWrongWithZero(this->_val);
 	}
 
-	//CDecimal* ToDecimal()
-	//{
-	//	return HornerSchema();
-	//}
-
 	virtual ~CPositional()
 	{
 		delete _alfa;
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//CDecimal* ToDecimal()
+	//{
+	//	return HornerSchema();
+	//}
 	//CDecimal* HornerSchema()
 	//{
 	//	bool firstStep = false;

@@ -6,6 +6,42 @@ using namespace std;
 
 class IValue
 {
+	friend bool operator==(const IValue& lhs, const IValue& rhs)
+	{
+		bool reachedBool = true;
+
+		for (size_t i = 0; i < lhs._val->size(); i++)
+			reachedBool &= lhs._val->at(i) == rhs._val->at(i);
+
+		return reachedBool;
+		return lhs._val == rhs._val;
+	}
+
+	friend bool operator!=(const IValue& lhs, const IValue& rhs)
+	{
+		return !(lhs == rhs);
+	}
+
+	friend bool operator<(const IValue& lhs, const IValue& rhs)
+	{
+		return lhs._val < rhs._val;
+	}
+
+	friend bool operator<=(const IValue& lhs, const IValue& rhs)
+	{
+		return !(rhs < lhs);
+	}
+
+	friend bool operator>(const IValue& lhs, const IValue& rhs)
+	{
+		return rhs < lhs;
+	}
+
+	friend bool operator>=(const IValue& lhs, const IValue& rhs)
+	{
+		return !(lhs < rhs);
+	}
+
 protected:
 	vector<int>* _val=nullptr;
 	char _base;
