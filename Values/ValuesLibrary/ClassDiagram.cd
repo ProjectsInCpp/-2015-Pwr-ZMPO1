@@ -10,7 +10,7 @@
   <Class Name="IValue" Collapsed="true">
     <Position X="6" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>gAAAAAAAAAAAAhAAAAhAAAAAAAAAAAAAAAgIAAAAAMA=</HashCode>
+      <HashCode>gAAAAAAACAAAAhAAAAhAAAAAAAAAAAAAAAgIAAAAAMA=</HashCode>
       <FileName>IValue.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -24,29 +24,22 @@
   <Class Name="CBinaryDecimal" Collapsed="true">
     <Position X="6" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BinaryDecimal.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CBCDplus3" Collapsed="true">
-    <Position X="6" Y="7.25" Width="1.5" />
+  <Class Name="CFunctionalClass" Collapsed="true">
+    <Position X="14.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
-      <FileName>BCDplus3.h</FileName>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FunctionalClass.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CU1" Collapsed="true">
-    <Position X="3.25" Y="4.75" Width="1.5" />
+  <Class Name="COperation" Collapsed="true">
+    <Position X="14.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>U1.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CU2" Collapsed="true">
-    <Position X="3.25" Y="6" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>U2.h</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Operation.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CPositional">
@@ -59,18 +52,11 @@
       <Field Name="_alfa" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="CFunctionalClass" Collapsed="true">
-    <Position X="14.5" Y="0.75" Width="1.5" />
+  <Class Name="CAdd" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>FunctionalClass.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="COperation" Collapsed="true">
-    <Position X="14.5" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Operation.h</FileName>
+      <FileName>Add.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

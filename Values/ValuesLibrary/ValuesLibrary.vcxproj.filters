@@ -36,19 +36,7 @@
     <ClInclude Include="BinaryDecimal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BCDplus3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="U1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="U2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="NUtils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Positional.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FunctionalClass.h">
@@ -60,9 +48,30 @@
     <ClInclude Include="Add.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Positional.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Alphabet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IValue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Positional.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Binary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryDecimal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Add.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

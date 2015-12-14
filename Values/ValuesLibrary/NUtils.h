@@ -1,12 +1,12 @@
 #pragma once
 #include <vector>
 #include <algorithm>
+#include <string>
 #include "IValue.h"
-#include "Positional.h"
-
-#define BIN_BASE 2
 
 using namespace std;
+
+#define BIN_BASE 2
 
 namespace NUtils
 {
@@ -82,8 +82,6 @@ namespace NUtils
 
 	//virtual CPositional* apply(CPositional* first, CPositional* second)
 
-	inline 
-
 	inline bool AreVOIEquals(vector<int>* first, vector<int>* second)
 	{
 		bool reachedBool = true;
@@ -93,10 +91,5 @@ namespace NUtils
 
 		return reachedBool;
 	}
-
-
-
-
-
 };
 
