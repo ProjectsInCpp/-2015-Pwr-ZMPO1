@@ -8,33 +8,13 @@ class CAdd :
 public:
 	virtual CPositional* apply(CPositional* first, CPositional* second)
 	{
-		vector<int>* retVal = new vector<int>();
-		vector<int>* firstCopy = new vector<int>();
-		vector<int>* secondCopy = new vector<int>();
 
 		int base = first->GetIntBase();
-		char sign = NUtils::ToEqualsSign(detSign(first->GetSign(), second->GetSign()));
+		char sign = NUtils::ToEqualsSign(NUtils::detSign(first->GetSign(), second->GetSign()));
 
-		int sizeSub = first->GetVal()->size() - second->GetVal()->size();
-
-		if (sizeSub > 0)
-		{
-			firstCopy->resize(first->GetVal()->size());
-			secondCopy->resize(first->GetVal()->size());
-		}
-		else if (sizeSub < 0)
-		{
-			firstCopy->resize(second->GetVal()->size());
-			secondCopy->resize(second->GetVal()->size());
-		}
-		else
-		{
-			firstCopy->resize(first->GetVal()->size());
-			secondCopy->resize(second->GetVal()->size());
-		}
-
-		transform(first->GetVal()->rbegin(), first->GetVal()->rend(), firstCopy->rbegin(), [](char a) { return a; });
-		transform(second->GetVal()->rbegin(), second->GetVal()->rend(), secondCopy->rbegin(), [](char a) { return a; });
+		vector<int>* retVal = new vector<int>();
+		vector<int>* firstCopy = IValue::allign(first, second)->at(0);
+		vector<int>* secondCopy = IValue::allign(first, second)->at(1);
 
 		vector<int>::reverse_iterator Xi = firstCopy->rbegin();
 		vector<int>::reverse_iterator Yi = secondCopy->rbegin();
@@ -60,17 +40,5 @@ public:
 		return end;
 	}
 
-private:
-	int detSign(int first , int second)
-	{
-		int retVal = 1;
-
-		if (first == second == 1)
-		{
-			
-		}
-
-		return retVal;
-	}
 };
 

@@ -1,6 +1,8 @@
 #pragma once
 #include <vector>
 #include <algorithm>
+#include "IValue.h"
+#include "Positional.h"
 
 #define BIN_BASE 2
 
@@ -66,6 +68,22 @@ namespace NUtils
 		return retVal;
 	}
 
+	inline int detSign(int first, int second)
+	{
+		int retVal = 1;
+
+		if (first == second == 1)
+		{
+
+		}
+
+		return retVal;
+	}
+
+	//virtual CPositional* apply(CPositional* first, CPositional* second)
+
+	inline 
+
 	inline bool AreVOIEquals(vector<int>* first, vector<int>* second)
 	{
 		bool reachedBool = true;
@@ -75,5 +93,10 @@ namespace NUtils
 
 		return reachedBool;
 	}
+
+
+
+
+
 };
 
