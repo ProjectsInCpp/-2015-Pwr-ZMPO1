@@ -23,19 +23,27 @@ public:
 
 	friend bool operator>=(CPositional& first, CPositional& second)
 	{
-		bool retVal = true;
+		bool equal = true;
+		bool higher = false;
+		bool firstCheck = false;
 
 		vector<int>* firstCopy = CPositional::allign(&first,&second)->at(0);
 		vector<int>* secondCopy = CPositional::allign(&first, &second)->at(1);
 
-		vector<int>::reverse_iterator Xi = firstCopy->rbegin();
-		vector<int>::reverse_iterator Yi = secondCopy->rbegin();
+		vector<int>::iterator Xi = firstCopy->begin();
+		vector<int>::iterator Yi = secondCopy->begin();
 
-		while (Xi != firstCopy->rend()) {
-			retVal &= *Xi++ >= *Yi++;
-		}
+		higher = *Xi++ > *Yi++;
+		
+		if (higher == true) return true;
 
-		return retVal;
+		Xi = firstCopy->begin();
+		Yi = secondCopy->begin();
+
+		while (Xi != firstCopy->end())
+				equal &= *Xi++ >= *Yi++;
+		
+		return equal;
 	}
 
 	friend bool operator==(CPositional& first, CPositional& second)

@@ -6,6 +6,8 @@ vector<CPositional*>* COperation::SetFirstHigher(CPositional* aFirst, CPositiona
 	CPositional* newFirst = new CPositional();
 	CPositional* newSecond = new CPositional();
 
+	bool isSecHigher = *aSecond >= *aFirst;
+
 	if (*aSecond >= *aFirst)
 	{
 		newFirst = aSecond;
@@ -52,14 +54,19 @@ vector<int>* COperation::Sub(vector<int>* firstCopy, vector<int>* secondCopy, in
 	int Ciplus1 = 0;
 
 	while (Xi != firstCopy->rend()) {
+
+		if ((*Xi - Ci) < *Yi) 
+			Ciplus1 = 1;
+		else 
+			Ciplus1 = 0;
+
 		int zi = *Xi + base * Ciplus1 - *Yi - Ci;
 
 		retVal->push_back(zi);
 
-		if ((*Xi++ - Ci) < *Yi++)
-			Ciplus1 = 1;
-		else
-			Ciplus1 = 0;
+		Ci = Ciplus1;
+
+		Xi++; Yi++;
 	}
 
 	return retVal;

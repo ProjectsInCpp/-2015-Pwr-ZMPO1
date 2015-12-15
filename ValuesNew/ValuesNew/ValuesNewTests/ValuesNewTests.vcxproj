@@ -166,6 +166,7 @@
     <ClCompile Include="CBinary_Test.cpp" />
     <ClCompile Include="CDecimal_Test.cpp" />
     <ClCompile Include="CIntegration_Test.cpp" />
+    <ClCompile Include="COperation_Sub_EqPlus_Test.cpp" />
     <ClCompile Include="COperation_Sub_Test.cpp" />
     <ClCompile Include="COperators_Positional_Test.cpp" />
     <ClCompile Include="CPositional_Tests.cpp" />

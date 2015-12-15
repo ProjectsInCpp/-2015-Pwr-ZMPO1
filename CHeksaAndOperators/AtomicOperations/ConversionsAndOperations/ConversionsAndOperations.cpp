@@ -21,22 +21,22 @@ vector<int>* quotientProductMethodReverse(vector<int>* aVal, int inBase );
 
 int main()
 {
-	int v = 1;
-	int i = 1;
-	int j = 1;
+	//int v = 1;
+	//int i = 1;
+	//int j = 1;
 
-	vector<int> *values = new vector<int>();
-	values->push_back(0);
-	values->push_back(1);
-	values->push_back(2);
+	//vector<int> *values = new vector<int>();
+	//values->push_back(0);
+	//values->push_back(1);
+	//values->push_back(2);
 
-	vector<int>::reverse_iterator it = values->rbegin();
+	//vector<int>::reverse_iterator it = values->rbegin();
 
-	cout << *it << endl;
+	//cout << *it << endl;
 
-	it++;
+	//it++;
 
-	cout << *it << endl;
+	//cout << *it << endl;
 
 	//string a = "33";
 	//string b = "44";
