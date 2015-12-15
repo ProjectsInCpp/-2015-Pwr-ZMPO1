@@ -108,7 +108,7 @@ CPositional* COperation::apply(CPositional* aFirst, CPositional* aSecond, char a
 
 	delete retVal;
 	descVals = nullptr;
-	matrixVals = nullptr;
+	matrixVals = nullptr; 
 
 	int sign = NUtils::detSign(fstSign, sndSign, aOper);
 
