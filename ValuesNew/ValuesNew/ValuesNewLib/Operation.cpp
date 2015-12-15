@@ -1,27 +1,20 @@
 #include "stdafx.h"
 #include "Operation.h"
 
-vector<CPositional*>* COperation::SetFirstHigher(CPositional* aFirst, CPositional* aSecond)
+vector<CPositional*>* COperation::DescSortedModules(CPositional* aFirst, CPositional* aSecond)
 {
-	CPositional* newFirst = new CPositional();
-	CPositional* newSecond = new CPositional();
-
-	bool isSecHigher = *aSecond >= *aFirst;
+	vector<CPositional*>* retVal = new vector<CPositional*>();
 
 	if (*aSecond >= *aFirst)
 	{
-		newFirst = aSecond;
-		newSecond = aFirst;
-	}
-	else
-	{
-		newFirst = aFirst;
-		newSecond = aSecond;
+		CPositional* buffSecond = new CPositional();
+		buffSecond = aSecond;
+		aSecond = aFirst;
+		aFirst = buffSecond;
 	}
 
-	vector<CPositional*>* retVal = new vector<CPositional*>();
-	retVal->push_back(newFirst);
-	retVal->push_back(newSecond);
+	retVal->push_back(aFirst);
+	retVal->push_back(aSecond);
 
 	return retVal;
 }
@@ -75,59 +68,54 @@ vector<int>* COperation::Sub(vector<int>* firstCopy, vector<int>* secondCopy, in
 CPositional* COperation::apply(CPositional* aFirst, CPositional* aSecond, char aOper)
 {
 	int base = aFirst->GetIntBase();
-	vector<char>* retRev = new vector<char>();
 	vector<int>* retVal = nullptr;
-	vector<CPositional*>* maybeSwapped = nullptr;
-	vector<vector<int>*>* matrixValues = nullptr;
-	int sign;
-	int fstSign;
-	int sndSign;
+	vector<CPositional*>* descVals = nullptr;
+	vector<vector<int>*>* matrixVals = nullptr;
 
-	maybeSwapped = SetFirstHigher(aFirst, aSecond);
-	aFirst = maybeSwapped->at(0);
-	aSecond = maybeSwapped->at(1);
+	descVals = DescSortedModules(aFirst, aSecond);
 
-	fstSign = aFirst->GetSign();
-	sndSign = aSecond->GetSign();
+	int fstSign = descVals->at(0)->GetSign();
+	int sndSign = descVals->at(1)->GetSign();
 
-	vector<int>* firstCopy = CPositional::allign(aFirst, aSecond)->at(0);
-	vector<int>* secondCopy = CPositional::allign(aFirst, aSecond)->at(1);
-
-	// DISPATCHER
+	matrixVals = CPositional::allign(descVals->at(0), descVals->at(1));
+	
+#pragma region ******************** DISPATCHER *****************************
 
 	if (aOper == O_ADD)
 	{
-		if (aSecond->GetSign() == 1 ^ aFirst->GetSign() == 1)
-			retVal = Sub(firstCopy, secondCopy, base);
+		if (fstSign == 1 ^ sndSign == 1 )
+			retVal = Sub(matrixVals->at(0), matrixVals->at(1), base);
 		else
-			retVal = Add(firstCopy, secondCopy, base);
+			retVal = Add(matrixVals->at(0), matrixVals->at(1), base);
 	}
 	else if (aOper == O_SUB)
 	{
-
-		if (aSecond->GetSign() == 1 ^ aFirst->GetSign() == 1)
-			retVal = Add(firstCopy, secondCopy, base);
+		if (fstSign == 1 ^ sndSign == 1 )
+			retVal = Add(matrixVals->at(0), matrixVals->at(1), base);
 		else
-			retVal = Sub(firstCopy, secondCopy, base);
+			retVal = Sub(matrixVals->at(0), matrixVals->at(1), base);
 	}
+#pragma endregion
 
-	// popZeroFromStart
 	while (retVal->back() == 0)
 		retVal->pop_back();
 
-	retRev->resize(retVal->size());
+	vector<char>* retRev = new vector<char>(retVal->size());
 
 	NUtils::FoldRightVI_VC(NUtils::ToEqualsChar, retVal, retRev);
 
 	string* retStr = new string(retRev->begin(), retRev->end());
 
-	sign = NUtils::detSign(aFirst->GetSign(), aSecond->GetSign(), aOper);
-
-	firstCopy = nullptr;
-	secondCopy = nullptr;
 	delete retVal;
-	maybeSwapped = nullptr;
+	descVals = nullptr;
+	matrixVals = nullptr;
+
+	int sign = NUtils::detSign(fstSign, sndSign, aOper);
 
 	CPositional* end = new CPositional(NUtils::ToEqualsChar(base), *retStr, NUtils::ToEqualsChar(sign));
+
+	delete retStr;
+	retRev = nullptr;
+
 	return end;
 }

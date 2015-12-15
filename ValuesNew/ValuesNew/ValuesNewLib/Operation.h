@@ -7,7 +7,7 @@
 class COperation :
 	public CFunctionalClass
 {
-	vector<CPositional*>* SetFirstHigher(CPositional* aFirst, CPositional* aSecond);
+	vector<CPositional*>* DescSortedModules(CPositional* aFirst, CPositional* aSecond);
 	vector<int>* Add(vector<int>* firstCopy, vector<int>* secondCopy, int& base);
 	vector<int>* Sub(vector<int>* firstCopy, vector<int>* secondCopy, int& base);
 public:
