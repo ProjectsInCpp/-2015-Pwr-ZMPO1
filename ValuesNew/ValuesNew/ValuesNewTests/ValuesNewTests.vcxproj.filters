@@ -47,16 +47,16 @@
     <ClCompile Include="CAlphabet_Tests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="COperation_Add_Test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="COperation_Sub_Test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="COperation_Add_EqPlus_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="COperation_Sub_EqPlus_Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="COperation_Sub_MixSign_Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="COperation_Add_MixSign_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

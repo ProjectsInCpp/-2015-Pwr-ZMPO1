@@ -21,6 +21,19 @@ int NUtils::ToEqualsInt(char aValue0) {
 
 	return end;
 }
+//
+//vector<vector<int>*>* NUtils::VecOfPositional_To_VoVoi(vector<CPositional*>* aVec)
+//{
+//	vector<vector<int>*>* retVal = new vector<vector<int>*>();
+//
+//	vector<int>* fstVal = CPositional::allign(aVec->at(0), aVec->at(1))->at(0);
+//	vector<int>* sndVal = CPositional::allign(aVec->at(1), aVec->at(1))->at(1);
+//
+//	retVal->push_back(fstVal);
+//	retVal->push_back(sndVal);
+//
+//	return retVal;
+//}
 
 char NUtils::ToEqualsChar(int aValue0)
 {
@@ -61,30 +74,30 @@ vector<int>* NUtils::ToIntVec(string *aChain)
 	return retVal;
 }
 
-int NUtils::detSign(int first, int second,char aOper)
+int NUtils::detSign(int first, int second, char aOper)
 {
 	int retVal = 1;
 
 	if (aOper == '+')
 	{
 		if (first == 1 && second == 1)
-		{
 			retVal = 1;
-		}
 		else if (first == 0 && second == 0)
-		{
 			retVal = 0;
-		}
-		else if (first == 0, second == 1)
-		{
+		else if (first == 0 && second == 1)
 			retVal = 0;
-		}
+		else if (first == 1 && second == 1)
+			retVal = 0;
 		else
 			retVal = 1;
 	}
 	else if (aOper == '-')
 	{
-		if (first == 0, second == 0)
+		if (first == 0 && second == 0)
+		{
+			retVal = 0;
+		}
+		else if (first == 0 && second == 1)
 		{
 			retVal = 0;
 		}
@@ -107,5 +120,3 @@ void NUtils::FoldRightVI_VC(char(*fun)(int), vector<int>* tape, vector<char>* ac
 {
 	transform(tape->rbegin(), tape->rend(), acc->begin(), [fun](int a) { return (fun)(a); });
 }
-
-

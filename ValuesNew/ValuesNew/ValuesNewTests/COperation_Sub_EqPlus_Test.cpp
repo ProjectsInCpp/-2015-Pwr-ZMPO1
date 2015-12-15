@@ -12,7 +12,6 @@ namespace ValuesTests
 	TEST_CLASS(COperation_Sub_EqPlus)
 	{
 	public:
-
 		TEST_METHOD(SUB_APPLY_12_19_BASE10)
 		{
 			// arrange	

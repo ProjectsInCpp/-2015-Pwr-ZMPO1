@@ -75,35 +75,41 @@ vector<int>* COperation::Sub(vector<int>* firstCopy, vector<int>* secondCopy, in
 CPositional* COperation::apply(CPositional* aFirst, CPositional* aSecond, char aOper)
 {
 	int base = aFirst->GetIntBase();
-	char buffOper = aOper;
+	vector<char>* retRev = new vector<char>();
+	vector<int>* retVal = nullptr;
+	vector<CPositional*>* maybeSwapped = nullptr;
+	vector<vector<int>*>* matrixValues = nullptr;
+	int sign;
+	int fstSign;
+	int sndSign;
 
-	vector<CPositional*>* maybeSwapped = SetFirstHigher(aFirst, aSecond);
+	maybeSwapped = SetFirstHigher(aFirst, aSecond);
 	aFirst = maybeSwapped->at(0);
 	aSecond = maybeSwapped->at(1);
 
-	bool equalSigns = aFirst->GetSign() == aSecond->GetSign();
+	fstSign = aFirst->GetSign();
+	sndSign = aSecond->GetSign();
 
-	int sign = NUtils::detSign(aFirst->GetSign(), aSecond->GetSign(),aOper);
-
-	vector<int>* retVal = nullptr;
 	vector<int>* firstCopy = CPositional::allign(aFirst, aSecond)->at(0);
 	vector<int>* secondCopy = CPositional::allign(aFirst, aSecond)->at(1);
 
 	// DISPATCHER
+
 	if (aOper == O_ADD)
 	{
-		if (equalSigns)
+		if (aSecond->GetSign() == 1 ^ aFirst->GetSign() == 1)
+			retVal = Sub(firstCopy, secondCopy, base);
+		else
 			retVal = Add(firstCopy, secondCopy, base);
-		else if(aSecond->GetSign() == 1)
-			retVal = Sub(firstCopy, secondCopy, base);
-		else if(aFirst->GetSign() == 1)
-			retVal = Sub(firstCopy, secondCopy, base);
-
 	}
-	else if ( aOper == O_SUB)
-		retVal = Sub(firstCopy, secondCopy, base);
+	else if (aOper == O_SUB)
+	{
 
-	vector<char>* retRev = new vector<char>();
+		if (aSecond->GetSign() == 1 ^ aFirst->GetSign() == 1)
+			retVal = Add(firstCopy, secondCopy, base);
+		else
+			retVal = Sub(firstCopy, secondCopy, base);
+	}
 
 	// popZeroFromStart
 	while (retVal->back() == 0)
@@ -115,6 +121,10 @@ CPositional* COperation::apply(CPositional* aFirst, CPositional* aSecond, char a
 
 	string* retStr = new string(retRev->begin(), retRev->end());
 
+	sign = NUtils::detSign(aFirst->GetSign(), aSecond->GetSign(), aOper);
+
+	firstCopy = nullptr;
+	secondCopy = nullptr;
 	delete retVal;
 	maybeSwapped = nullptr;
 
