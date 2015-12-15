@@ -1,4 +1,4 @@
-﻿Build started 12/15/2015 11:09:04 AM.
+﻿Build started 12/15/2015 12:20:21 PM.
      1>Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewLib\ValuesNewLib.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ValuesNewLib.pch" /Fo"Debug\\" /Fd"Debug\ValuesNewLib.pdb" /Gd /TP /analyze- /errorReport:prompt Operation.cpp
@@ -25,4 +25,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.80
+Time Elapsed 00:00:00.92

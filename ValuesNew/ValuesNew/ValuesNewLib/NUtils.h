@@ -19,7 +19,7 @@ namespace NUtils
 	char ToEqualsChar(int aValue0);
 	int ToEqualsSign(char aSign);
 	vector<int>* ToIntVec(string *aChain);
-	int detSign(int first, int second);
+	int detSign(int first, int second, char aOper);
 	bool AreVOIEquals(vector<int>* first, vector<int>* second);
 	void FoldRightVI_VC(char (*fun)(int),vector<int>* tape, vector<char>* acc);
 };

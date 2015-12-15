@@ -160,6 +160,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="COperation_Add_EqPlus_Test.cpp" />
     <ClCompile Include="COperation_Add_Test.cpp" />
     <ClCompile Include="CAlphabet_Tests.cpp" />
     <ClCompile Include="CBinary_Test.cpp" />

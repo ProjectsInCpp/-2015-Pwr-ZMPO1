@@ -12,7 +12,7 @@ namespace ValuesTests
 	TEST_CLASS(COperation_Sub_Signed_Test)
 	{
 	public:
-		TEST_METHOD(ADD_APPLY_19_M12_BASE10)
+		TEST_METHOD(SUB_APPLY_19_12_BASE10)
 		{
 			// arrange	
 			char inBase = 'A';

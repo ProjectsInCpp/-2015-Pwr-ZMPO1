@@ -61,23 +61,34 @@ vector<int>* NUtils::ToIntVec(string *aChain)
 	return retVal;
 }
 
-int NUtils::detSign(int first, int second)
+int NUtils::detSign(int first, int second,char aOper)
 {
 	int retVal = 1;
 
-	if (first == 1 && second == 1)
+	if (aOper == '+')
 	{
-
+		if (first == 1 && second == 1)
+		{
+			retVal = 1;
+		}
+		else if (first == 0 && second == 0)
+		{
+			retVal = 0;
+		}
+		else if (first == 0, second == 1)
+		{
+			retVal = 0;
+		}
+		else
+			retVal = 1;
 	}
-	else if (first == 0 && second == 0)
+	else if (aOper == '-')
 	{
-		retVal = 0;
+		if (first == 0, second == 0)
+		{
+			retVal = 0;
+		}
 	}
-	else if(first == 0 ,second == 1)
-	{
-		retVal = 0;
-	}
-
 
 	return retVal;
 }

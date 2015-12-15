@@ -1,14 +1,27 @@
 #include "stdafx.h"
 #include "Operation.h"
 
-void COperation::SetFirstHigher(CPositional* aFirst, CPositional* aSecond)
+vector<CPositional*>* COperation::SetFirstHigher(CPositional* aFirst, CPositional* aSecond)
 {
+	CPositional* newFirst = new CPositional();
+	CPositional* newSecond = new CPositional();
+
 	if (*aSecond >= *aFirst)
 	{
-		CPositional* buff = aFirst;
-		aFirst = aSecond;
-		aSecond = buff;
+		newFirst = aSecond;
+		newSecond = aFirst;
 	}
+	else
+	{
+		newFirst = aFirst;
+		newSecond = aSecond;
+	}
+
+	vector<CPositional*>* retVal = new vector<CPositional*>();
+	retVal->push_back(newFirst);
+	retVal->push_back(newSecond);
+
+	return retVal;
 }
 
 vector<int>* COperation::Add(vector<int>* firstCopy, vector<int>* secondCopy, int& base)
@@ -57,10 +70,13 @@ CPositional* COperation::apply(CPositional* aFirst, CPositional* aSecond, char a
 	int base = aFirst->GetIntBase();
 	char buffOper = aOper;
 
-	SetFirstHigher(aFirst, aSecond);
+	vector<CPositional*>* maybeSwapped = SetFirstHigher(aFirst, aSecond);
+	aFirst = maybeSwapped->at(0);
+	aSecond = maybeSwapped->at(1);
+
 	bool equalSigns = aFirst->GetSign() == aSecond->GetSign();
 
-	int sign = NUtils::detSign(aFirst->GetSign(), aSecond->GetSign());
+	int sign = NUtils::detSign(aFirst->GetSign(), aSecond->GetSign(),aOper);
 
 	vector<int>* retVal = nullptr;
 	vector<int>* firstCopy = CPositional::allign(aFirst, aSecond)->at(0);
@@ -73,6 +89,9 @@ CPositional* COperation::apply(CPositional* aFirst, CPositional* aSecond, char a
 			retVal = Add(firstCopy, secondCopy, base);
 		else if(aSecond->GetSign() == 1)
 			retVal = Sub(firstCopy, secondCopy, base);
+		else if(aFirst->GetSign() == 1)
+			retVal = Sub(firstCopy, secondCopy, base);
+
 	}
 	else if ( aOper == O_SUB)
 		retVal = Sub(firstCopy, secondCopy, base);
@@ -90,6 +109,7 @@ CPositional* COperation::apply(CPositional* aFirst, CPositional* aSecond, char a
 	string* retStr = new string(retRev->begin(), retRev->end());
 
 	delete retVal;
+	maybeSwapped = nullptr;
 
 	CPositional* end = new CPositional(NUtils::ToEqualsChar(base), *retStr, NUtils::ToEqualsChar(sign));
 	return end;
