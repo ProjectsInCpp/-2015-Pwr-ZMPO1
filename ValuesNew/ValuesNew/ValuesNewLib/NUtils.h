@@ -21,6 +21,6 @@ namespace NUtils
 	vector<int>* ToIntVec(string *aChain);
 	int detSign(int first, int second);
 	bool AreVOIEquals(vector<int>* first, vector<int>* second);
-	void FoldLeft(char (*fun)(int),vector<int>* tape, vector<char>* acc);
+	void FoldRightVI_VC(char (*fun)(int),vector<int>* tape, vector<char>* acc);
 };
 

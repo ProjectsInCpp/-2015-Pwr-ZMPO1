@@ -9,7 +9,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace ValuesTests
 {
-	TEST_CLASS(COperation_Signed_Test)
+	TEST_CLASS(COperation_Add_Signed_Test)
 	{
 	public:
 		TEST_METHOD(ADD_APPLY_M12_M19_BASE10)
@@ -162,34 +162,34 @@ namespace ValuesTests
 			reachedVal = nullptr;
 		}
 
-		//TEST_METHOD(CADD_APPLY_19_M12_BASE10)
-		//{
-		//	// arrange	
-		//	char inBase = 'A';
-		//	CPositional* firstVal = new CPositional(inBase, "19", '0');
-		//	CPositional* secondVal = new CPositional(inBase, "12", '1');
+		TEST_METHOD(ADD_APPLY_19_M12_BASE10)
+		{
+			// arrange	
+			char inBase = 'A';
+			CPositional* firstVal = new CPositional(inBase, "19", '0');
+			CPositional* secondVal = new CPositional(inBase, "12", '1');
 
-		//	CPositional* expectedVal = new CPositional(inBase, "7", '0');
-		//	int expectedSign = 0;
+			CPositional* expectedVal = new CPositional(inBase, "7", '0');
+			int expectedSign = 0;
 
-		//	// act
-		//	COperation* operation = new COperation();
-		//	CPositional* reachedVal = operation->apply(firstVal, secondVal, O_ADD);
-		//	int reachedSign = reachedVal->GetSign();
+			// act
+			COperation* operation = new COperation();
+			CPositional* reachedVal = operation->apply(firstVal, secondVal, O_ADD);
+			int reachedSign = reachedVal->GetSign();
 
-		//	// assert
+			// assert
 
-		//	Assert::IsTrue(expectedSign == reachedSign);
-		//	Assert::IsTrue(*expectedVal == *reachedVal);
+			Assert::IsTrue(expectedSign == reachedSign);
+			Assert::IsTrue(*expectedVal == *reachedVal);
 
-		//	delete firstVal;
-		//	delete secondVal;
-		//	delete expectedVal;
-		//	delete reachedVal;
-		//	firstVal = nullptr;
-		//	secondVal = nullptr;
-		//	expectedVal = nullptr;
-		//	reachedVal = nullptr;
-		//}
+			delete firstVal;
+			delete secondVal;
+			delete expectedVal;
+			delete reachedVal;
+			firstVal = nullptr;
+			secondVal = nullptr;
+			expectedVal = nullptr;
+			reachedVal = nullptr;
+		}
 	};
 }

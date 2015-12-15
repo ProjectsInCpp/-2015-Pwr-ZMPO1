@@ -75,7 +75,7 @@ int NUtils::detSign(int first, int second)
 	}
 	else if(first == 0 ,second == 1)
 	{
-
+		retVal = 0;
 	}
 
 
@@ -92,7 +92,7 @@ bool NUtils::AreVOIEquals(vector<int>* first, vector<int>* second)
 	return reachedBool;
 }
 
-void NUtils::FoldLeft(char(*fun)(int), vector<int>* tape, vector<char>* acc)
+void NUtils::FoldRightVI_VC(char(*fun)(int), vector<int>* tape, vector<char>* acc)
 {
 	transform(tape->rbegin(), tape->rend(), acc->begin(), [fun](int a) { return (fun)(a); });
 }

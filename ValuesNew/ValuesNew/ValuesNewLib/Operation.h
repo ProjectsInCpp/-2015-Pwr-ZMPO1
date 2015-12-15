@@ -8,6 +8,8 @@ class COperation :
 	public CFunctionalClass
 {
 	void SetFirstHigher(CPositional* aFirst, CPositional* aSecond);
+	vector<int>* Add(vector<int>* firstCopy, vector<int>* secondCopy, int& base);
+	vector<int>* Sub(vector<int>* firstCopy, vector<int>* secondCopy, int& base);
 public:
 	virtual CPositional* apply(CPositional* aFirst, CPositional* aSecond, char aOper);
 };
