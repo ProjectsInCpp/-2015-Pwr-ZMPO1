@@ -1,10 +1,23 @@
 #include "stdafx.h"
 #include "Add.h"
 
+void CAdd::SetFirstHigher(CPositional* first,CPositional* second)
+{
+	if (*second >= *first)
+	{
+		CPositional* buff = first;
+		first = second;
+		second = buff;
+	}
+}
+
 CPositional* CAdd::apply(CPositional* first, CPositional* second)
 {
 	int base = first->GetIntBase();
-	char sign = NUtils::ToEqualsSign(NUtils::detSign(first->GetSign(), second->GetSign()));
+
+	int sign = NUtils::detSign(first->GetSign(), second->GetSign());
+
+	SetFirstHigher(first, second);
 
 	vector<int>* retVal = new vector<int>();
 	vector<int>* firstCopy = CPositional::allign(first, second)->at(0);
@@ -28,6 +41,6 @@ CPositional* CAdd::apply(CPositional* first, CPositional* second)
 
 	delete retVal;
 
-	CPositional* end = new CPositional(NUtils::ToEqualsChar(base), *retStr, sign);
+	CPositional* end = new CPositional(NUtils::ToEqualsChar(base), *retStr, NUtils::ToEqualsChar(sign));
 	return end;
 }
