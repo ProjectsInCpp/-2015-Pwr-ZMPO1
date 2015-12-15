@@ -1,7 +1,11 @@
-﻿Build started 12/15/2015 9:24:54 AM.
+﻿Build started 12/15/2015 10:14:36 AM.
      1>Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewLib\ValuesNewLib.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ValuesNewLib.pch" /Fo"Debug\\" /Fd"Debug\ValuesNewLib.pdb" /Gd /TP /analyze- /errorReport:prompt Add.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ValuesNewLib.pch" /Fo"Debug\\" /Fd"Debug\ValuesNewLib.pdb" /Gd /TP /analyze- /errorReport:prompt Add.cpp FunctionalClass.cpp Operation.cpp
+         Operation.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         FunctionalClass.cpp
          Add.cpp
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug\ValuesNewLib.lib" /NOLOGO Debug\ValuesNewLib.res
@@ -17,12 +21,12 @@
          Debug\Positional.obj
          Debug\stdafx.obj
      1>LINK : warning LNK4068: /MACHINE not specified; defaulting to X86
-     1>Operation.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
      1>FunctionalClass.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
      1>BinaryDecimal.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>Add.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
          ValuesNewLib.vcxproj -> D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug\ValuesNewLib.lib
      1>Done Building Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewLib\ValuesNewLib.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.97
+Time Elapsed 00:00:00.81

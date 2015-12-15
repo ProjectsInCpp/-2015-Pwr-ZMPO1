@@ -47,10 +47,7 @@
     <ClCompile Include="CAlphabet_Tests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CAdd_Unsigned_Tests.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CAdd_Signed_Test.cpp">
+    <ClCompile Include="COperation_Add_Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

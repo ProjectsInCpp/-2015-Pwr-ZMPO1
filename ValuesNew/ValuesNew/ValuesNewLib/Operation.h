@@ -7,6 +7,9 @@
 class COperation :
 	public CFunctionalClass
 {
+	void SetFirstHigher(CPositional* aFirst, CPositional* aSecond);
+public:
+	virtual CPositional* apply(CPositional* aFirst, CPositional* aSecond, char aOper);
 };
 
 #endif

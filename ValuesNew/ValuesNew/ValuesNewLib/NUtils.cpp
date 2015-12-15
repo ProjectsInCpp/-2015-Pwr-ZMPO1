@@ -73,6 +73,11 @@ int NUtils::detSign(int first, int second)
 	{
 		retVal = 0;
 	}
+	else if(first == 0 ,second == 1)
+	{
+
+	}
+
 
 	return retVal;
 }
@@ -85,6 +90,11 @@ bool NUtils::AreVOIEquals(vector<int>* first, vector<int>* second)
 		reachedBool &= first->at(i) == second->at(i);
 
 	return reachedBool;
+}
+
+void NUtils::FoldLeft(char(*fun)(int), vector<int>* tape, vector<char>* acc)
+{
+	transform(tape->rbegin(), tape->rend(), acc->begin(), [fun](int a) { return (fun)(a); });
 }
 
 

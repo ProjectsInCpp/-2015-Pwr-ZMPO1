@@ -8,7 +8,7 @@
 class CFunctionalClass
 {
 public:
-	virtual CPositional* apply(CPositional* first, CPositional* second) = 0;
+	virtual CPositional* apply(CPositional* aFirst, CPositional* aSecond, char aOper) = 0;
 };
 
 #endif

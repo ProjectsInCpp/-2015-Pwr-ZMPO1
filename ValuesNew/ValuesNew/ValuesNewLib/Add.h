@@ -9,9 +9,7 @@
 class CAdd :
 	public COperation
 {
-	void SetFirstHigher(CPositional* first, CPositional* second);
 public:
-	virtual CPositional* apply(CPositional* first, CPositional* second);
 };
 
 #endif
