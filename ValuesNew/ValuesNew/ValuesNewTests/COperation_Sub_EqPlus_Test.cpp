@@ -19,8 +19,9 @@ namespace ValuesTests
 			CPositional* firstVal = new CPositional(inBase, "12", '0');
 			CPositional* secondVal = new CPositional(inBase, "19", '0');
 
+			//DebugBreak();
 			CPositional* expectedVal = new CPositional(inBase, "7", '1');
-			int expectedSign = 0;
+			int expectedSign = 1;
 
 			// act
 			COperation* operation = new COperation();
@@ -80,7 +81,7 @@ namespace ValuesTests
 			CPositional* secondVal = new CPositional(inBase, "102", '0');
 
 			CPositional* expectedVal = new CPositional(inBase, "90", '1');
-			int expectedSign = 0;
+			int expectedSign = 1;
 
 			// act
 			COperation* operation = new COperation();

@@ -62,6 +62,24 @@ public:
 
 		return retVal;
 	}
+
+	friend ostream & operator << (ostream &buffStream, CPositional& s)
+	{
+		string retVal = "";
+		retVal += NUtils::ToDefaultSign(s.GetSign());
+
+		vector<char>* vocVal = new vector<char>(s.GetVal()->size());
+
+		transform(s.GetVal()->begin(), s.GetVal()->end(), vocVal->begin(), [](int a) { return NUtils::ToEqualsChar(a); });
+
+		string* inStringShape = new string(vocVal->begin(), vocVal->end());
+		retVal += *inStringShape;
+
+		vocVal = nullptr;
+		inStringShape = nullptr;
+
+		return buffStream << retVal;		
+	}
 };
 
 #endif

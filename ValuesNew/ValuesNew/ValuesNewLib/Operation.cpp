@@ -68,6 +68,8 @@ vector<int>* COperation::Sub(vector<int>* firstCopy, vector<int>* secondCopy, in
 CPositional* COperation::apply(CPositional* aFirst, CPositional* aSecond, char aOper)
 {
 	int base = aFirst->GetIntBase();
+	bool ifAscend = *aSecond >= *aFirst;
+
 	vector<int>* retVal = nullptr;
 	vector<CPositional*>* descVals = nullptr;
 	vector<vector<int>*>* matrixVals = nullptr;
@@ -110,7 +112,7 @@ CPositional* COperation::apply(CPositional* aFirst, CPositional* aSecond, char a
 	descVals = nullptr;
 	matrixVals = nullptr; 
 
-	int sign = NUtils::detSign(fstSign, sndSign, aOper);
+	int sign = NUtils::detSign(fstSign, sndSign, aOper, ifAscend);
 
 	CPositional* end = new CPositional(NUtils::ToEqualsChar(base), *retStr, NUtils::ToEqualsChar(sign));
 

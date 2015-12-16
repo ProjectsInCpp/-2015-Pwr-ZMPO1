@@ -64,6 +64,13 @@ int NUtils::ToEqualsSign(char aSign)
 	return sign;
 }
 
+char NUtils::ToDefaultSign(int aSign)
+{
+	if (aSign == 1) return '-';
+	else return '+';
+	//return (aSign == 1) ? '-' : '+';
+}
+
 vector<int>* NUtils::ToIntVec(string *aChain)
 {
 	vector<int>* retVal = new vector<int>();
@@ -74,7 +81,7 @@ vector<int>* NUtils::ToIntVec(string *aChain)
 	return retVal;
 }
 
-int NUtils::detSign(int first, int second, char aOper)
+int NUtils::detSign(int first, int second, char aOper, bool ifAscend )
 {
 	int retVal = 1;
 
@@ -93,13 +100,27 @@ int NUtils::detSign(int first, int second, char aOper)
 	}
 	else if (aOper == '-')
 	{
-		if (first == 0 && second == 0)
+		if ( ifAscend )
 		{
-			retVal = 0;
+			if (first == 0 && second == 0)
+			{
+				retVal = 1;
+			}
+			else if (first == 0 && second == 1)
+			{
+				retVal = 0;
+			}
 		}
-		else if (first == 0 && second == 1)
+		else
 		{
-			retVal = 0;
+			if (first == 0 && second == 0)
+			{
+				retVal = 0;
+			}
+			else if (first == 0 && second == 1)
+			{
+				retVal = 0;
+			}
 		}
 	}
 
