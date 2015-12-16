@@ -1,6 +1,30 @@
-﻿Build started 12/15/2015 7:33:55 PM.
-     1>Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewTests\ValuesNewTests.vcxproj" on node 2 (Build target(s)).
-     1>Link:
+﻿Build started 12/16/2015 8:55:08 AM.
+     1>Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewTests\ValuesNewTests.vcxproj" on node 3 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewLib" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Debug\ValuesNewTests.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /FC /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewLib" /I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ValuesNewTests.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /FC /errorReport:prompt COperation_Add_EqPlus_Test.cpp COperation_Add_MixSign_Test.cpp CAlphabet_Tests.cpp CBinary_Test.cpp CDecimal_Test.cpp CIntegration_Test.cpp COperation_Sub_EqPlus_Test.cpp COperation_Sub_MixSign_Test.cpp COperators_Positional_Test.cpp CPositional_Tests.cpp NUtils_Tests.cpp
+         NUtils_Tests.cpp
+         CPositional_Tests.cpp
+         COperators_Positional_Test.cpp
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\valuesnew\valuesnew\valuesnewtests\coperators_positional_test.cpp(38): warning C4800: 'boolean': forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\valuesnew\valuesnew\valuesnewtests\coperators_positional_test.cpp(64): warning C4800: 'boolean': forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\valuesnew\valuesnew\valuesnewtests\coperators_positional_test.cpp(89): warning C4800: 'boolean': forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\valuesnew\valuesnew\valuesnewtests\coperators_positional_test.cpp(114): warning C4800: 'boolean': forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\valuesnew\valuesnew\valuesnewtests\coperators_positional_test.cpp(139): warning C4800: 'boolean': forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\valuesnew\valuesnew\valuesnewtests\coperators_positional_test.cpp(164): warning C4800: 'boolean': forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\valuesnew\valuesnew\valuesnewtests\coperators_positional_test.cpp(189): warning C4800: 'boolean': forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\clouds\onedrive\github\-2015-pwr-zmpo1\valuesnew\valuesnew\valuesnewtests\coperators_positional_test.cpp(214): warning C4800: 'boolean': forcing value to bool 'true' or 'false' (performance warning)
+         COperation_Sub_MixSign_Test.cpp
+         COperation_Sub_EqPlus_Test.cpp
+         CIntegration_Test.cpp
+         CDecimal_Test.cpp
+         CBinary_Test.cpp
+         CAlphabet_Tests.cpp
+         COperation_Add_MixSign_Test.cpp
+         COperation_Add_EqPlus_Test.cpp
+         Generating Code...
+       Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug\ValuesNewTests.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug" /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\UnitTest\lib" ValuesNewLib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug\ValuesNewTests.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug\ValuesNewTests.lib" /MACHINE:X86 /DLL Debug\COperation_Add_EqPlus_Test.obj
          Debug\COperation_Add_MixSign_Test.obj
          Debug\CAlphabet_Tests.obj
@@ -14,9 +38,10 @@
          Debug\NUtils_Tests.obj
          Debug\stdafx.obj
          "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug\ValuesNewLib.lib"
+            Creating library D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug\ValuesNewTests.lib and object D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug\ValuesNewTests.exp
          ValuesNewTests.vcxproj -> D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\Debug\ValuesNewTests.dll
-     1>Done Building Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewTests\ValuesNewTests.vcxproj" (Build target(s)).
+     1>Done Building Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewTests\ValuesNewTests.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.32
+Time Elapsed 00:00:17.44

@@ -22,7 +22,7 @@ namespace ValuesTests
 			CPositional* expectedVal = new CPositional(inBase, "31", '1');
 			int expectedSign = 1;
 
-			// act
+			// act	
 			COperation* operation = new COperation();
 			CPositional* reachedVal = operation->apply(firstVal, secondVal, O_ADD);
 			int reachedSign = reachedVal->GetSign();
