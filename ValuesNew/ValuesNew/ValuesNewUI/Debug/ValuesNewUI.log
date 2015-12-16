@@ -1,4 +1,4 @@
-﻿Build started 12/16/2015 9:55:36 AM.
+﻿Build started 12/16/2015 10:15:30 AM.
      1>Project "D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewUI\ValuesNewUI.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Clouds\OneDrive\GitHub\-2015-Pwr-ZMPO1\ValuesNew\ValuesNew\ValuesNewLib" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ValuesNewUI.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ValuesNewUI.cpp
@@ -12,4 +12,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.30
+Time Elapsed 00:00:00.98
